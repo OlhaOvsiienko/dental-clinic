@@ -1,0 +1,34 @@
+<section class="booking-section">
+    <h2 class="booking-section__title">Book a Visit Now!</h2>
+    <div class="booking-section__image">
+        <img src="img/background-book-visit.jpg" alt="Background to book visit" class="booking-section__image">
+    </div>
+    <div class="booking-section__form"> 
+      <form action="https://formspree.io/f/mbjvjloy" method="post" class="booking-section__form">
+            <label for="name" class="booking-section__label">Enter your full name</label>
+               <input type="text" id="name" name="name" required class="booking-section__input">
+            <label for="phone" class="booking-section__label">Enter your phone number</label>
+               <input type="tel" id="phone" name="phone" pattern="[0-9]{12}"required class="booking-section__input">
+               <small class="booking-section__small">Enter 12 digits without spaces or hyphens</small>
+            <label for="dentist" class="booking-section__label">Choose your dentist:</label>
+               <select id="dentist" name="dentist" class="booking-section__select">
+                 <option value="emma-smith">Emma Smith</option>
+                 <option value="eliza-brown">Eliza Brown</option>
+                 <option value="john-foster">John Foster</option>
+               </select>
+            <label for="clinic" class="booking-section__label">Select the clinic:</label>
+               <select id="clinic" name="clinic" class="booking-section__select">
+                 <option value="ny">55 Lexington Ave, NY</option>
+                 <option value="la">100 S Main St, LA</option>
+               </select>
+            <label for="message" class="booking-section__label">Leave your message here</label>
+            <textarea id="message" name="message" class="booking-section__textarea"></textarea>
+              <input type="submit" value="Send" class="booking-section__submit-button">
+        </form>
+    </div>
+    <div class="booking-section__description">
+      <p class="booking-section__subtitle">Best Dental Services For Kids</p>
+      <p class="booking-section__subtitle">Ensure your children's oral health!</p>
+      <a href="#null" class="booking-section__button">Shedule a Visit</a>
+    </div>
+</section>
