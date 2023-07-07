@@ -47,3 +47,27 @@
 .move-clinic {
     margin-right: 300px;
 }
+
+.line-for-info {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(225, 227, 222);
+    height: 80px; /* Adjust the height to the desired value */
+    text-align: right; /* Align the text to the right */
+}
+
+.line-for-info ul {
+    margin-right: 50px; /* Adjust the right margin to move the block to the left */
+}
+
+.line-for-info li {
+    margin-right: 5px; /* Adjust the right margin */
+    padding: 5px 10px; /* Adjust the padding */
+}
+
+.line-for-info li a {
+    color: rgb(95, 118, 115)
+}
