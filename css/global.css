@@ -1,13 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/*img{
+    display: block;
+    width: 100%;
+}*/
+
 :root{
+    --main-color-first: #ea7035;
+    --main-color-second: #1b4f49;
+    --text-color-first: rgb(119,140,137);
+    --text-color-second: rgb(95,118,115);
+    --text-font-family: 'Roboto', sans-serif;
     font-family: 'Fredoka', sans-serif;
     scroll-behavior: smooth;
+}
+
+h2{
+    font-size: 44px;
+    font-family: var(--title-font-family);
 }
 
 a {
