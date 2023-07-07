@@ -26,3 +26,12 @@ h2{
     font-size: 44px;
     font-family: var(--title-font-family);
 }
+
+/*:root{
+    font-family: 'Fredoka', sans-serif;
+    scroll-behavior: smooth;
+}*/
+
+a {
+    text-decoration: none;
+}

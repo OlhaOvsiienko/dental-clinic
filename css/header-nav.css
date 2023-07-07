@@ -1,0 +1,45 @@
+.head-part {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.phone-number {
+    margin-left: 300px;
+    display: inline-block;
+    font-family: "Arial Black", sans-serif;
+    color: orange;
+    margin-right: 5px;
+}
+
+.shedule {
+    font-family: "Arial Black", sans-serif;
+    color: orange;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clinic-info {
+    display: inline-block;
+    font-family: "Arial Black", sans-serif;
+    color: orange;
+}
+
+.move-clinic {
+    margin-right: 300px;
+}
