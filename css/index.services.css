@@ -1,0 +1,30 @@
+/*.services__title {
+    color: #1b4f49;
+}
+.services__content-text--title {
+    color: #1b4f49;
+}
+.services__content-text--subtitle { 
+    color: rgb(119,140,137);
+}
+.services__content-discount--title {
+    color: #1b4f49;
+}
+.services__content-discount--text {
+    color: rgb(119,140,137);
+}*/
+.services__card-restorative {
+    background-color: rgb(249, 236, 215);
+    max-width: 527px;
+    max-height: 423.141px;
+}
+.services__card-preventive {
+    background-color: rgb(225, 227, 222);
+    max-width: 527px;
+    max-height: 423.141px;
+}
+.services__card-treatment {
+    background-color: rgb(221, 234, 255);
+    max-width: 527px;
+    max-height: 423.141px;
+}
