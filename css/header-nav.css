@@ -1,0 +1,82 @@
+.head-part {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: white;
+    text-align: center;
+}
+
+.nav-p {
+    margin: 0;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+.phone-number {
+    display: inline-block;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    color: orange;
+    margin-right: 5px;
+    margin-left: 300px;
+}
+
+.shedule {
+    display: inline-block;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    color: orange;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.clinic-info {
+    display: inline-block;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    color: orange;
+}
+
+.move-clinic {
+    margin-left: auto;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+.line-for-info {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(225, 227, 222);
+    height: 80px;
+    text-align: right;
+    margin-left: auto; 
+    margin-right: 300px; 
+}
+
+.line-for-info li {
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+.line-for-info li a {
+    color: rgb(95, 118, 115);
+}
+
+.logo-and-menu {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 300px;
+}
