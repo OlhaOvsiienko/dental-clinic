@@ -5,7 +5,6 @@
 
 .navigation {
     background-color: white;
-    padding: 10px;
     text-align: center;
 }
 
@@ -18,15 +17,16 @@
 }
 
 .phone-number {
-    margin-left: 300px;
     display: inline-block;
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     color: orange;
     margin-right: 5px;
+    margin-left: 300px;
 }
 
 .shedule {
+    display: inline-block;
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     color: orange;
@@ -35,6 +35,7 @@
 .content {
     display: flex;
     justify-content: space-between;
+    align-items: center; 
 }
 
 .clinic-info {
@@ -45,7 +46,9 @@
 }
 
 .move-clinic {
-    margin-right: 300px;
+    margin-left: auto;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
 }
 
 .line-for-info {
@@ -57,10 +60,8 @@
     background-color: rgb(225, 227, 222);
     height: 80px;
     text-align: right;
-}
-
-.line-for-info ul {
-    margin-right: 50px;
+    margin-left: auto; 
+    margin-right: 300px; 
 }
 
 .line-for-info li {
@@ -69,5 +70,13 @@
 }
 
 .line-for-info li a {
-    color: rgb(95, 118, 115)
+    color: rgb(95, 118, 115);
+}
+
+.logo-and-menu {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 300px;
 }
