@@ -23,8 +23,14 @@
 }
 
 h2{
-    font-size: 44px;
+    font-size: 34px;
     font-family: var(--title-font-family);
+    font-weight: 500;
+}
+@media (min-width: 768px) {
+    h2{
+        font-size: 44px;
+    }
 }
 
 a {
@@ -33,4 +39,4 @@ a {
 
 body {
     overflow-x: hidden;
-  }
+}
