@@ -9,7 +9,10 @@
 }
 
 .nav-p {
-    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: auto;
+    flex: 1;
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -37,15 +40,12 @@
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #f5f3ef;
     width: 100%;
     padding: 7px;
     gap: 100px;
-    flex: 1;
-    background-size: cover;  
+    background-size: cover; 
+    flex-direction: row; 
 }
 
 .clinic-info {
