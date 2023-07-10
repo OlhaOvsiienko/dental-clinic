@@ -1,22 +1,91 @@
-/*.services__title {
-    color: #1b4f49;
+.servicers {
+    width: 1424px;
+    height: 640.141px;
+    padding-bottom: 65px;
+    padding-top: 115px;
+    line-height: 26.52px;
+}
+.servicers__left{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.services__subtitle {
+    color: rgb(234, 112, 53);
+    font-family: var(--text-font-family);
+    font-size: 12px;
+    font-family: var(--text-font-family);
+}
+.services__title {
+    color: var(--main-color-second);
+    line-height: 52.8px;
+    font-size: 44px;
+    font-family: "Fredoka", sans-serif;
 }
 .services__content-text--title {
-    color: #1b4f49;
+    color: var(--main-color-second);
+    line-height: 24.7px;
+    font-size: 19px;
+    font-family: var( --text-font-family);
 }
 .services__content-text--subtitle { 
-    color: rgb(119,140,137);
+    color: var(--text-color-first);
+    font-size: 17px;
+    line-height: 26.52px;
+    font-family:  var( --text-font-family);
+}
+.services__content-discount--img {
+    width: 70px;
 }
 .services__content-discount--title {
-    color: #1b4f49;
+    color: var(--main-color-second);
+    font-family: var(--text-font-family);
+    font-size: 21px;
+    line-height: 31.5px;
 }
 .services__content-discount--text {
-    color: rgb(119,140,137);
-}*/
+    color: var(--text-color-first);
+    font-size: 15px;
+    line-height: 22.5px;
+    font-family: var( --text-font-family);
+}
 .services__card-restorative {
     background-color: rgb(249, 236, 215);
     max-width: 527px;
     max-height: 423.141px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.services__card-restorative--title {
+    color: rgb(234,112,53);
+    font-family: "Fredoka", sans-serif;
+    font-size: 22px;
+    line-height: 30.8px;
+}
+.services__card-restorative--text {
+    color: rgb(219, 153, 121);
+    font-family: var( --text-font-family);
+    font-size: 17px;
+    font-style: italic;
+    line-height: 26.52px;
+}
+.services__card-restorative--list-item {
+    color: rgba(219, 153, 121, 0.82);
+    font-size: 15px;
+    font-family: var(--text-font-family);
+    line-height: 22.5px;
+}
+.services__card-restorative--button {
+    background-color: var(--main-color-first);
+    color: #fffefe;
+    border-radius: 34px;
+    cursor: pointer;
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    text-align: center;
+    height: 43.3125px;
+    width: 119.812px;
 }
 .services__card-preventive {
     background-color: rgb(225, 227, 222);
