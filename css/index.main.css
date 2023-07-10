@@ -1,0 +1,10 @@
+.main-part{
+    padding: 50px;
+}
+
+.main-start p{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(95, 118, 115);
+    font-style: italic;
+    display: inline;
+}

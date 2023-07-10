@@ -1,7 +1,8 @@
 @import url(global.css);
+@import url(header-nav.css);
+@import url(index.main.css);
 @import url(index.testimonials.css);
 @import url(index.benefits.css);
-@import url(header-nav.css);
 @import url(index.services.css);
 @import url(index.features.css);
 @import url(index.special-price.css);

@@ -4,7 +4,7 @@
 }
 
 .navigation {
-    background-color: white;
+    background-color: #333;
     text-align: center;
 }
 
@@ -21,8 +21,7 @@
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     color: var(--main-color-first);
-    margin-right: 5px;
-    margin-left: 300px;
+    margin-right: auto;
 }
 
 @media (max-width:992px) {
@@ -34,7 +33,6 @@
 .shedule {
     display: inline-block;
     font-family: "Fredoka", sans-serif;
-    font-weight: 500;
     color: var(--main-color-first);
 }
 
@@ -45,6 +43,9 @@
     background-color: #f5f3ef;
     width: 100%;
     padding: 7px;
+    gap: 100px;
+    flex: 1;
+    background-size: cover;  
 }
 
 .clinic-info {
@@ -58,7 +59,7 @@
     margin-left: auto;
     font-family: 'Roboto', sans-serif;
     color: #333;
-    padding: 10px;
+    padding: 8px;
 }
 
 .line-for-info {
@@ -71,7 +72,6 @@
     height: 80px;
     text-align: right;
     margin-left: auto;
-    margin-right: 300px;
 }
 
 .line-for-info li {
@@ -100,9 +100,7 @@
     display: flex;
     align-items: center;
     margin-right: auto;
-    margin-left: 300px;
     flex: 1;
-    background-size: cover;
 }
 
 .logo-cursor{
