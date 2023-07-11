@@ -1,3 +1,7 @@
+.main-part__container{
+    max-width: 1024px;
+}
+
 .main-part {
     padding: 50px;
 }

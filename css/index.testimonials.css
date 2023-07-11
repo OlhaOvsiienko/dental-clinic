@@ -1,3 +1,10 @@
+@media (min-width: 768px) {
+    .testimonials {
+        padding-top: 110px;
+        padding-bottom: 65px;
+    }
+}
+
 .testimonials__title {
     color: var(--main-color-first);
     font-size: 12px;
@@ -164,6 +171,6 @@
 .testimonials__button {
     width: 30px;
     height: 30px;
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0, 0, 0);
     border-radius: 50%;
 }

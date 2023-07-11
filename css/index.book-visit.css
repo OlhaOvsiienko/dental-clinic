@@ -1,30 +1,89 @@
-
 .booking__frame {
    background: url('../img/background-book-visit.jpg');
    margin-bottom: 0px;
-   
+   background-size: cover;
+   background-position: center;
+   position: relative;
+
 }
-.booking__container {
+
+.booking__frame-container {
    border-radius: 34px;
    background-color: white;
-   }
-   .booking__description {
-      background-color: rgb(234, 112, 53);
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr; 
-      margin-bottom: 0px;
-      margin-top: 0px;
-      padding: 30px;
-      width: 100%;
-   }
-   .booking__description-best-dental {
-      font-size: 32px;
-      color: white;
-      font-weight: bold;
-   }
+   display: grid;
+   color: #1b4f49;
+   width: 495.4px;
+   height: 597.9px;
+   padding: 60px 100px;
+   
 
-   .booking__description-ensure-children {
-      font-size: 17px;
-      color: #FFFFFF94;
-      font-style: italic;
-   }
+
+}
+
+.booking__frame-container-title {
+   font-size: 32px;
+   margin-top: 24px;
+   color: #1b4f49;
+}
+
+.booking__frame-container-input {
+   background-color: #1B4F491F;
+   border-color: #1B4F491F;
+   border-radius: 34px;
+   padding: 12px 24px;
+   margin: 12px 0px 0px;
+   color: rgba (27, 79, 73, 0.12);
+   text-align: left;
+   width: 295.4px;
+   height: 40.8px;
+
+
+}
+
+.button-send {
+   background-color: rgb(27, 79, 73);
+   color: white;
+   padding: 12px 24px;
+   width: 295.4px;
+   height: 40.8px;
+   border-radius: 34px;
+   margin-top: 24 px;
+}
+
+.booking__description {
+   background-color: rgb(234, 112, 53);
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   padding: 30px;
+   width: 100%;
+   text-align: left;
+}
+
+.booking__description-best-dental {
+   font-size: 32px;
+   color: white;
+   font-weight: bold;
+
+}
+
+.booking__description-ensure-children {
+   font-size: 17px;
+   color: #FFFFFF94;
+   font-style: italic;
+}
+
+.booking__button {
+   color: #1b4f49;
+   font-size: 14px;
+   font-family: Roboto, sans-serif;
+   border-radius: 34px;
+   background-color: rgb(245, 243, 239);
+   padding: 12px 24px;
+   width: 145.13px;
+   height: 62.63px;
+   border-radius: 34px;
+
+
+}

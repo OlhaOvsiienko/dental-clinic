@@ -14,8 +14,7 @@
     width: 100%;
 }*/
 
-section
-{
+.container {
     max-width: 1024px;
 }
 
@@ -39,6 +38,7 @@ h2 {
     h2 {
         font-size: 44px;
     }
+    
 }
 
 a {
