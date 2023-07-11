@@ -5,14 +5,13 @@
 
 .navigation {
     background-color: #333;
-    text-align: center;
 }
 
 .nav-p {
     justify-content: flex-start;
+    display: flex;
     align-items: center;
     margin-right: auto;
-    flex: 1;
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -20,7 +19,7 @@
 }
 
 .phone-number {
-    display: inline-block;
+    padding: 7px;
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     color: var(--main-color-first);
@@ -36,16 +35,17 @@
 .shedule {
     display: inline-block;
     font-family: "Fredoka", sans-serif;
+    font-size: 500;
     color: var(--main-color-first);
 }
 
 .content {
+    display: flex;
     background-color: #f5f3ef;
     width: 100%;
     padding: 7px;
     gap: 100px;
     background-size: cover; 
-    flex-direction: row; 
 }
 
 .clinic-info {
