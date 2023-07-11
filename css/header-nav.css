@@ -5,6 +5,8 @@
 
 .navigation {
     background-color: #333;
+    min-width: 500px;
+    background-size: cover;
 }
 
 .nav-p {
@@ -44,8 +46,6 @@
     background-color: #f5f3ef;
     width: 100%;
     padding: 7px;
-    gap: 100px;
-    background-size: cover; 
 }
 
 .clinic-info {
