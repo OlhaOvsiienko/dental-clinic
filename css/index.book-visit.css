@@ -1,4 +1,30 @@
+
+.booking__frame {
+   background: url('../img/background-book-visit.jpg');
+   margin-bottom: 0px;
+   
+}
 .booking__container {
    border-radius: 34px;
    background-color: white;
-}
+   }
+   .booking__description {
+      background-color: rgb(234, 112, 53);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; 
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding: 30px;
+      width: 100%;
+   }
+   .booking__description-best-dental {
+      font-size: 32px;
+      color: white;
+      font-weight: bold;
+   }
+
+   .booking__description-ensure-children {
+      font-size: 17px;
+      color: #FFFFFF94;
+      font-style: italic;
+   }
