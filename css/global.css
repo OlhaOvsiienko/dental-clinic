@@ -21,7 +21,7 @@ section
 
 :root {
     --main-color-first: #ea7035;
-    --main-color-second: #1b4f49;
+    --main-color-second: rgb(27, 79, 73);
     --text-color-first: rgb(119, 140, 137);
     --text-color-second: rgb(95, 118, 115);
     --text-font-family: 'Roboto', sans-serif;

@@ -1,26 +1,86 @@
-.main-part{
+.main-part {
     padding: 50px;
 }
 
-.main-start p{
+.main-start p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: rgb(95, 118, 115);
     font-style: italic;
 }
 
-.main-move{
-    text-align: center;
+.main-move {
     display: flex;
-    align-items: center;
-    margin-right: auto;
+    justify-content: space-between;
 }
-.underline{
-    color:rgb(95, 118, 115);
+
+.main-move p {
+    margin: 0;
+}
+
+.main-move .left-paragraph {
+    text-align: left;
+}
+
+.main-move .right-paragraph {
+    text-align: right;
+}
+
+.underline {
+    color: rgb(95, 118, 115);
     text-decoration: none;
 }
 
-.underline:hover{
-    color:rgb(95, 118, 115);
+.underline:hover {
+    color: rgb(95, 118, 115);
     text-decoration: underline;
 }
+
+.book{
+    color: var(--main-color-first);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.move-book{
+    margin: 0;
+    text-align: center;
+}
+
+.welcome{
+    font-size: 12px;
+}
+
+h1{
+    color: var(--main-color-second);
+    font-weight: 500;
+}
+.h1-part{
+    padding: 20px;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: left;
+    color: var(--text-color-first);
+}
+
+
+
+.girl-with-teeth{
+    flex: 1;
+    display: flex;
+    margin: left;
+}
+
+@media (min-width: 768px) {
+
+    .header__nav {
+        display: flex;
+    }
+
+    .header__menu {
+        align-items: center;
+        flex: 1;
+        justify-content: space-around;
+    }
+}
+
