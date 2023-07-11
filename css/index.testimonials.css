@@ -47,16 +47,16 @@
     background-color:rgb(225, 227, 222);
 }
 
-.testimonials__item-katy .testimonials__author {
+.testimonials__item-katy .testimonials__author, .testimonials__item-katy svg {
     color: #29498c;
 }
-.testimonials__item-mark .testimonials__author {
+.testimonials__item-mark .testimonials__author, .testimonials__item-mark svg {
     color: #1b4f49;
 }
-.testimonials__item-lucy .testimonials__author {
+.testimonials__item-lucy .testimonials__author, .testimonials__item-lucy svg {
     color: #ea7035;
 }
-.testimonials__item-jane .testimonials__author {
+.testimonials__item-jane .testimonials__author, .testimonials__item-jane svg {
     color: #1b4f49;
 }
 
