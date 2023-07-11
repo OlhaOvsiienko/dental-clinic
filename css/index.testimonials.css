@@ -23,51 +23,73 @@
 }
 
 .testimonials__list {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .testimonials__item {
     border-radius: 30px;
     padding: 15px;
+    flex-basis: 250px;
+    margin: 0 10px;
 }
 
 .testimonials__item-katy {
     background-color: rgb(221, 234, 255);
 }
+
 .testimonials__item-mark {
-    background-color :rgb(225, 227, 222);
-}
-.testimonials__item-lucy {
-    background-color :rgb(249, 236, 215);
-}
-.testimonials__item-jane {
-    background-color:rgb(225, 227, 222);
+    background-color: rgb(225, 227, 222);
 }
 
-.testimonials__item-katy .testimonials__author, .testimonials__item-katy svg {
+.testimonials__item-lucy {
+    background-color: rgb(249, 236, 215);
+}
+
+.testimonials__item-jane {
+    background-color: rgb(225, 227, 222);
+}
+
+.testimonials__item-katy .testimonials__author,
+.testimonials__item-katy svg {
     color: #29498c;
 }
-.testimonials__item-mark .testimonials__author, .testimonials__item-mark svg {
-    color: #1b4f49;
-}
-.testimonials__item-lucy .testimonials__author, .testimonials__item-lucy svg {
-    color: #ea7035;
-}
-.testimonials__item-jane .testimonials__author, .testimonials__item-jane svg {
+
+.testimonials__item-mark .testimonials__author,
+.testimonials__item-mark svg {
     color: #1b4f49;
 }
 
-.testimonials__item-katy .testimonials__comment,.testimonials__item-katy .testimonials__service {
-    color: rgb(93,120,177);
+.testimonials__item-lucy .testimonials__author,
+.testimonials__item-lucy svg {
+    color: #ea7035;
 }
-.testimonials__item-mark .testimonials__comment,.testimonials__item-mark .testimonials__service {
-    color: rgb(119,140,137);
+
+.testimonials__item-jane .testimonials__author,
+.testimonials__item-jane svg {
+    color: #1b4f49;
 }
-.testimonials__item-lucy .testimonials__comment,.testimonials__item-lucy .testimonials__service {
-    color: rgb(219,153,121);
+
+.testimonials__item-katy .testimonials__comment,
+.testimonials__item-katy .testimonials__service {
+    color: rgb(93, 120, 177);
 }
-.testimonials__item-jane .testimonials__comment,.testimonials__item-jane .testimonials__service {
-    color: rgb(119,140,137);
+
+.testimonials__item-mark .testimonials__comment,
+.testimonials__item-mark .testimonials__service {
+    color: rgb(119, 140, 137);
+}
+
+.testimonials__item-lucy .testimonials__comment,
+.testimonials__item-lucy .testimonials__service {
+    color: rgb(219, 153, 121);
+}
+
+.testimonials__item-jane .testimonials__comment,
+.testimonials__item-jane .testimonials__service {
+    color: rgb(119, 140, 137);
 }
 
 .testimonials__svg-wrapper {
@@ -79,22 +101,29 @@
 .testimonials__comment {
     font-family: var(--text-font-family);
     font-style: italic;
-    position: relative;
-    font-size: 17;
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .testimonials__author-service {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .testimonials__author {
     text-align: left;
     font-family: "Fredoka", sans-serif;
+    font-size: 22px;
+    margin-bottom: 5px;
 }
 
 .testimonials__service {
     font-family: var(--text-font-family);
     text-align: left;
+    font-size: 14px;
+    margin-bottom: 0;
 }
 
 .testimonials__image-container {
@@ -102,13 +131,32 @@
     height: 70px;
     border-radius: 50%;
     overflow: hidden;
-    position: relative;
-    display: inline-block;
+    margin-right: 15px;
 }
 
 .testimonials__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative;
+}
+
+.testimonials__item-katy .testimonials__image {
+    object-position: 67.777% 38.272%;
+}
+
+.testimonials__item-mark .testimonials__image {
+    object-position: 33.046% 50%;
+}
+
+.testimonials__item-lucy .testimonials__image {
+    object-position: 71.526% 33.878%;
+}
+
+.testimonials__item-jane .testimonials__image {
+    object-position: 44.169% 35.629%;
+}
+
+.testimonials__image-author-service-wrapper {
+    display: flex;
+    align-items: center;
 }
