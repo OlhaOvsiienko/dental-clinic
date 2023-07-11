@@ -112,19 +112,3 @@
     object-fit: cover;
     position: relative;
 }
-
-.testimonials__slick-slider-buttons {
-	text-align: center;
-	width: 100%;
-}
-
-.slick-next {
-	right: 0;
-}
-.slick-prev {
-	left: 0;
-}
-
-.testimonials__button.slick-disabled {
-	opacity: 0.5;
-}
