@@ -1,0 +1,26 @@
+.main-part{
+    padding: 50px;
+}
+
+.main-start p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgb(95, 118, 115);
+    font-style: italic;
+}
+
+.main-move{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+.underline{
+    color:rgb(95, 118, 115);
+    text-decoration: none;
+}
+
+.underline:hover{
+    color:rgb(95, 118, 115);
+    text-decoration: underline;
+}

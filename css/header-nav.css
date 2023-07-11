@@ -4,12 +4,16 @@
 }
 
 .navigation {
-    background-color: white;
-    text-align: center;
+    background-color: #333;
+    min-width: 500px;
+    background-size: cover;
 }
 
 .nav-p {
-    margin: 0;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -17,38 +21,45 @@
 }
 
 .phone-number {
-    display: inline-block;
+    padding: 7px;
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
-    color: orange;
-    margin-right: 5px;
-    margin-left: 300px;
+    color: var(--main-color-first);
+    margin-right: auto;
+}
+
+@media (max-width:992px) {
+    .phone-number {
+        display: flex;
+    }
 }
 
 .shedule {
     display: inline-block;
     font-family: "Fredoka", sans-serif;
-    font-weight: 500;
-    color: orange;
+    font-size: 500;
+    color: var(--main-color-first);
 }
 
 .content {
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
+    background-color: #f5f3ef;
+    width: 100%;
+    padding: 7px;
 }
 
 .clinic-info {
     display: inline-block;
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
-    color: orange;
+    color: var(--main-color-first);
 }
 
 .move-clinic {
     margin-left: auto;
     font-family: 'Roboto', sans-serif;
-    padding: 10px;
+    color: #333;
+    padding: 8px;
 }
 
 .line-for-info {
@@ -60,8 +71,7 @@
     background-color: rgb(225, 227, 222);
     height: 80px;
     text-align: right;
-    margin-left: auto; 
-    margin-right: 300px; 
+    margin-left: auto;
 }
 
 .line-for-info li {
@@ -73,10 +83,31 @@
     color: rgb(95, 118, 115);
 }
 
+.line-for-info li a:hover {
+    color: var(--main-color-first);
+    border-bottom: 2px solid var(--main-color-first);
+    line-height: 50%;
+    margin-top: 5px;
+    text-underline-offset: 5px;
+    text-decoration-skip-ink: none;
+}
+
+
+
+
 .logo-and-menu {
     justify-content: flex-start;
     display: flex;
     align-items: center;
     margin-right: auto;
-    margin-left: 300px;
+    flex: 1;
+}
+
+.logo-cursor{
+    cursor: pointer;
+}
+
+.line-and-menu {
+    background-color: rgb(225, 227, 222);
+    width: 100%;
 }
