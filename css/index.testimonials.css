@@ -2,7 +2,8 @@
     color: var(--main-color-first);
     font-size: 12px;
     text-align: center;
-    display:block
+    display: block;
+    font-family: "Fredoka", sans-serif;
 }
 
 .testimonials__subtitle {
@@ -10,6 +11,7 @@
     font-size: 44px;
     text-align: center;
     display: block;
+    font-family: "Fredoka", sans-serif;
 }
 
 .testimonials__description {
@@ -17,7 +19,7 @@
     color: var(--text-color-second);
     font-size: 19px;
     text-align: center;
-    display:block
+    display: block;
 }
 
 .testimonials__list {
@@ -36,13 +38,47 @@
     background-color: rgb(221, 234, 255);
 }
 .testimonials__item-mark {
-    background-color :rgb(225, 227, 222)
+    background-color :rgb(225, 227, 222);
 }
 .testimonials__item-lucy {
-    background-color :rgb(249, 236, 215)
+    background-color :rgb(249, 236, 215);
 }
 .testimonials__item-jane {
-    background-color:rgb(225, 227, 222)
+    background-color:rgb(225, 227, 222);
+}
+
+.testimonials__item-katy .testimonials__author {
+    color: #29498c;
+}
+.testimonials__item-mark .testimonials__author {
+    color: #1b4f49;
+}
+.testimonials__item-lucy .testimonials__author {
+    color: #ea7035;
+}
+.testimonials__item-jane .testimonials__author {
+    color: #1b4f49;
+}
+
+.testimonials__item-katy .testimonials__comment,.testimonials__item-katy .testimonials__service {
+    color: rgb(93,120,177);
+}
+.testimonials__item-mark .testimonials__comment,.testimonials__item-mark .testimonials__service {
+    color: rgb(119,140,137);
+}
+.testimonials__item-lucy .testimonials__comment,.testimonials__item-lucy .testimonials__service {
+    color: rgb(219,153,121);
+}
+.testimonials__item-jane .testimonials__comment,.testimonials__item-jane .testimonials__service {
+    color: rgb(119,140,137);
+}
+
+
+
+.testimonials__svg-wrapper {
+    display: block;
+    width: 50px;
+    height: 50px;
 }
 
 .testimonials__comment {
@@ -55,9 +91,12 @@
 .testimonials__author-service {
     display: inline-block;
 }
+
 .testimonials__author {
     text-align: left;
+    font-family: "Fredoka", sans-serif;
 }
+
 .testimonials__service {
     font-family: var(--text-font-family);
     text-align: left;
