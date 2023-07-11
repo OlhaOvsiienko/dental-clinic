@@ -23,13 +23,10 @@
 }
 
 .testimonials__list {
-    text-align: center;
+    margin: 0 auto;
 }
 
 .testimonials__item {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
     border-radius: 30px;
     padding: 15px;
 }
@@ -73,8 +70,6 @@
     color: rgb(119,140,137);
 }
 
-
-
 .testimonials__svg-wrapper {
     display: block;
     width: 50px;
@@ -116,4 +111,20 @@
     height: 100%;
     object-fit: cover;
     position: relative;
+}
+
+.testimonials__slick-slider-buttons {
+	text-align: center;
+	width: 100%;
+}
+
+.slick-next {
+	right: 0;
+}
+.slick-prev {
+	left: 0;
+}
+
+.testimonials__button.slick-disabled {
+	opacity: 0.5;
 }
