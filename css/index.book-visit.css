@@ -3,7 +3,7 @@
       background-size: contain;
 }
 
-.container {
+.booking-form__container {
    border-radius: 34px;
    background-color: white;
    display: grid;

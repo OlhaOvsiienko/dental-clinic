@@ -28,7 +28,7 @@
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1920px) {
     .benefits__image {
         object-position: 0;
     }
@@ -72,7 +72,8 @@ h3 {
     color: #dd9979;
 }
 
-p {
+.benefits__text p,
+.benefits__list-item-text {
     font-family: var(--text-font-family);
     font-size: 17px;
     color: #dd9979;
