@@ -43,7 +43,6 @@
 }
 
 .move-book{
-    margin: 0;
     text-align: center;
 }
 
@@ -68,7 +67,7 @@ h1{
 .girl-with-teeth{
     flex: 1;
     display: flex;
-    margin: left;
+    
 }
 
 @media (min-width: 768px) {
