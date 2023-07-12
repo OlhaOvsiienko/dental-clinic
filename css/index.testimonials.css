@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .testimonials__subtitle {
         font-size: 39px;
     }
@@ -8,13 +8,12 @@
     .testimonials__service {
         font-size: 14px;
     }
+    .testimonials__list {
+        margin-top: 45px;
+    }
 }
 
-@media (min-width: 768px) {
-    .testimonials {
-        padding-top: 110px;
-        padding-bottom: 65px;
-    }
+@media (max-width: 768px) {
     .testimonials__subtitle {
         font-size: 34px;
     }
@@ -47,6 +46,10 @@
     margin-top: 25px;
     text-align: center;
     display: block;
+}
+
+.testimonials__list {
+    margin-top: 50px;
 }
 
 .testimonials__item {
