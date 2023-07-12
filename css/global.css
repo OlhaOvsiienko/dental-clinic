@@ -26,6 +26,15 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #f5f3ef;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 5px;
+}
+
 h2 {
     font-size: 34px;
     font-family: var(--title-font-family);
