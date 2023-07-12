@@ -19,13 +19,23 @@
 }
 
 :root {
-    --main-color-first: #ea7035;
+    --background-color: #f5f3ef;
+    --main-color-first: rgb(234, 112, 53);
     --main-color-second: rgb(27, 79, 73);
     --text-color-first: rgb(119, 140, 137);
     --text-color-second: rgb(95, 118, 115);
     --text-font-family: 'Roboto', sans-serif;
     font-family: "Fredoka", sans-serif;
     scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
 h2 {
@@ -38,13 +48,4 @@ h2 {
     h2 {
         font-size: 44px;
     }
-    
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    overflow-x: hidden;
 }
