@@ -1,13 +1,26 @@
+@media (min-width: 992px) {
+    .testimonials__subtitle {
+        font-size: 39px;
+    }
+    .testimonials__item {
+        padding: 34px 28px 34px 28px;
+    }
+    .testimonials__service {
+        font-size: 14px;
+    }
+}
+
 @media (min-width: 768px) {
     .testimonials {
         padding-top: 110px;
         padding-bottom: 65px;
     }
-}
-
-.testimonials {
-    max-width: 1200px;
-    padding: 15px;
+    .testimonials__subtitle {
+        font-size: 34px;
+    }
+    .testimonials__item {
+        padding: 31px 27px 31px 27px;
+    }
 }
 
 .testimonials__title {
@@ -23,6 +36,7 @@
     font-size: 44px;
     text-align: center;
     display: block;
+    margin-top: 20px;
     font-family: "Fredoka", sans-serif;
 }
 
@@ -30,21 +44,14 @@
     font-family: var(--text-font-family);
     color: var(--text-color-second);
     font-size: 19px;
+    margin-top: 25px;
     text-align: center;
     display: block;
 }
 
-.testimonials__list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .testimonials__item {
     border-radius: 30px;
-    padding: 15px;
-    margin: 0 15px;
+    padding: 40px 30px 40px 30px;
 }
 
 .testimonials__item-katy {
@@ -115,7 +122,8 @@
     font-family: var(--text-font-family);
     font-style: italic;
     font-size: 17px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: left;
     word-break: break-word;
 }
@@ -123,6 +131,7 @@
 .testimonials__author-service {
     display: flex;
     flex-direction: column;
+    margin: 7,5px;
 }
 
 .testimonials__author {
@@ -131,15 +140,15 @@
     font-size: 22px;
     margin-bottom: 5px;
     word-break: break-word;
-    margin-left: 0px;
+    margin: 0px;
 }
 
 .testimonials__service {
     font-family: var(--text-font-family);
     text-align: left;
-    font-size: 14px;
+    font-size: 15px;
     word-break: break-word;
-    margin-left: 0px;
+    margin: 0px;
 }
 
 .testimonials__image-container {
@@ -175,11 +184,14 @@
 .testimonials__image-author-service-wrapper {
     display: flex;
     align-items: center;
+    padding-top: 7,5px;
+    padding-bottom: 7,5px;
 }
 
-.testimonials__button {
-    width: 30px;
-    height: 30px;
-    border-color: rgba(0, 0, 0, 0);
+.testimonials__image-container-wrapper {
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
 }
