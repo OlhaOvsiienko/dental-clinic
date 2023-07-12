@@ -1,53 +1,49 @@
-<section class="booking">
-  <div class="booking__frame">
-    <div class=booking__frame-container">
-      <h2 class="booking__frame-container-title">Book a Visit Now!</h2>
-      <div class="booking__frame-container-form">
-        <form action="https://formspree.io/f/mbjvjloy" method="post" class="booking__frame-container-form">
-          <div class="booking__frame-container-form-name">
-            <label for="name" class="booking__frame-container-label"></label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name*"
-              class="booking__frame-container-input">
-          </div>
-          <div class="booking__frame-container-form-phone">
-            <label for="phone" class="booking__frame-container-label"></label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{12}" placeholder="Enter your phone number*"
-              required class="booking__frame-container-input">
-            <small class="booking__frame-small"></small>
-          </div>
-          <div class="booking__frame-container-form-dentist">
-            <label for="dentist" class="booking__frame-container-label"></label>
-            <select id="dentist" name="dentist" class="booking__frame-container-input" placeholder="Choose your dentist">
-              <option value="" disabled selected class="booking__frame-container-input">Choose your dentist</option>
-              <option value="emma-smith" class="booking__frame-container-input">Emma Smith</option>
-              <option value="eliza-brown" class="booking__frame-container-input">Eliza Brown</option>
-              <option value="john-foster" class="booking__frame-container-input">John Foster</option>
-            </select>
-          </div>
-          <div class="booking__frame-container-form-address" <label for="clinic" class="booking__frame-container-label">
-            </label>
-            <select id="clinic" name="clinic" class="booking__frame-container-input">
-              <option value="" disabled selected>Select the clinic</option>
-              <option value="ny">55 Lexington Ave, NY</option>
-              <option value="la">100 S Main St, LA</option>
-            </select>
-          </div>
-          <div class="booking__frame-container-form-messege">
-            <label for="message" class="booking__frame-container-label"></label>
-            <input type="text" id="messege" name="name" placeholder="Leave your message here" class="booking__frame-container-input">
-          </div>
-            <div class="booking__frame-container-button-send">
-              <input type="submit" value="Send" class="button-send">
-            </div>
-          </div>
-        </form>
-      </div>
+<section class="booking-form">
+  <div class="container">
+    <h2 class="container-title">Book a Visit Now!</h2>
+    <div class="container-field">
+      <form action="https://formspree.io/f/mbjvjloy" method="post" class="booking__container-field">
+        <div class="container-field-name">
+          <label for="name" class="container-field-label"></label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name*" class="container-field-input">
+        </div>
+        <div class="container-field-phone">
+          <label for="phone" class="container-field-label"></label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{12}" placeholder="Enter your phone number*" required
+            class="container-field-input">
+          <small class="frame-small"></small>
+        </div>
+        <div class="container-field-dentist">
+          <label for="dentist" class="container-field-label"></label>
+          <select id="dentist" name="dentist" class="container-field-input" placeholder="Choose your dentist">
+            <option value="emma-smith" class="container-input">Emma Smith</option>
+            <option value="eliza-brown" class="container-input">Eliza Brown</option>
+            <option value="john-foster" class="-container-input">John Foster</option>
+          </select>
+        </div>
+        <div class="container-field-address">
+          <label for="clinic" class="container-field-label">
+          </label>
+          <select id="clinic" name="clinic" class="container-field-input">
+            <option value="ny">55 Lexington Ave, NY</option>
+            <option value="la">100 S Main St, LA</option>
+          </select>
+        </div>
+        <div class="container-field-messege">
+          <label for="message" class="container-field-label"></label>
+          <input type="text" id="messege" name="name" placeholder="Leave your message here"
+            class="container-field-input">
+        </div>
+        <div class="container-field-button-send">
+          <input type="submit" value="Send" class="button-send">
+        </div>
     </div>
+    </form>
   </div>
- 
+  </div>
   <div class="booking__description">
     <p class="booking__description-best-dental">Best Dental Services For Kids</p>
-    <p class="booking__description-ensure-children">Ensure your children's oral health!</p>
+    <p class="booking__description-ensure-children">Ensure your children's oral health! Make an appointment.</p>
     <a href="#" class="booking__button">Shedule a Visit</a>
   </div>
 </section>
