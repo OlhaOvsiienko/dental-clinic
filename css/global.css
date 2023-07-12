@@ -27,12 +27,11 @@
 }
 
 body {
-    background-color: #f5f3ef;
+    background-color: var(--background-color);
 }
 
 .container {
     max-width: 1200px;
-    padding: 0 5px;
 }
 
 h2 {
@@ -55,7 +54,6 @@ li {
         font-size: 44px;
         margin-top: 30px;
     }
-
 }
 
 a {
