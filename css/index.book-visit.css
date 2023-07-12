@@ -1,22 +1,36 @@
+@media (min-width: 500px) {
+
+   .booking-form,
+   .booking__description {
+      padding-top: 0px;
+      padding-bottom: 0px;
+   }
+}
+
 .booking-form {
-   background: url('../img/background-book-visit.jpg');
-      background-size: contain;
+   background: url('../img/background-book-visit-new.jpg');
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+
 }
 
 .booking-form__container {
    border-radius: 34px;
    background-color: white;
    display: grid;
-   color: #1b4f49;
-   width: 495.4px;
-   height: 597.9px;
-   padding: 15px 15px 15px 15px;
-  
+   width: 25%;
+   height: 60%;
+   position: relative;
+   top: 25px;
+   left: 200px;
 }
 
 .container-title {
    font-size: 32px;
    color: #1b4f49;
+   margin: 24px 0px 24px 0px;
+   text-align: center;
 }
 
 .container-field-input {
@@ -27,7 +41,7 @@
    color: rgba (27, 79, 73, 0.12);
    width: 295.4px;
    height: 40.8px;
-   
+
 }
 
 
@@ -37,7 +51,7 @@
    width: 295.4px;
    height: 40.8px;
    border-radius: 34px;
-   margin: 12px 0px 0px 0px;
+   margin: 48px 0px 48px 0px;
 
 }
 
@@ -45,36 +59,34 @@
    background-color: rgb(234, 112, 53);
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   margin-bottom: 0px;
-   margin-top: 0px;
-   padding: 30px;
-   width: 100%;
-   text-align: left;
+   padding: 24px 200px 24px 200px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 
 .booking__description-best-dental {
-   font-size: 32px;
+   font-size: 24px;
    color: white;
    font-weight: bold;
-
 }
 
 .booking__description-ensure-children {
-   font-size: 17px;
+   font-size: 14px;
    color: #FFFFFF94;
    font-style: italic;
 }
 
 .booking__button {
    color: #1b4f49;
-   font-size: 14px;
+   font-size: 10px;
    font-family: Roboto, sans-serif;
    border-radius: 34px;
    background-color: rgb(245, 243, 239);
-   padding: 12px 24px;
-   width: 145.13px;
-   height: 62.63px;
+   padding: 12px 24px 12px 24px;
+   font-weight: bold;
    border-radius: 34px;
+
 
 
 }
