@@ -9,6 +9,10 @@
     margin-right: auto;
 }
 
+body {
+    background-color: var(--background-color);
+}
+
 /*img{
     display: block;
     width: 100%;
@@ -19,6 +23,7 @@
 }
 
 :root {
+    --background-color: #f5f3ef;
     --main-color-first: rgb(234, 112, 53);
     --main-color-second: rgb(27, 79, 73);
     --text-color-first: rgb(119, 140, 137);
