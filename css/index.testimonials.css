@@ -2,12 +2,15 @@
     .testimonials__subtitle {
         font-size: 39px;
     }
+
     .testimonials__item {
         padding: 34px 28px 34px 28px;
     }
+
     .testimonials__service {
         font-size: 14px;
     }
+
     .testimonials__list {
         margin-top: 45px;
         padding-left: 32px;
@@ -19,10 +22,12 @@
     .testimonials__subtitle {
         font-size: 34px;
     }
+
     .testimonials__item {
         padding: 31px 27px 31px 27px;
         border-radius: 15px;
     }
+
     .testimonials__list {
         padding-left: 24px;
         padding-right: 24px;
@@ -143,7 +148,7 @@
 .testimonials__author-service {
     display: flex;
     flex-direction: column;
-    margin: 7,5px;
+    margin: 7, 5px;
 }
 
 .testimonials__author {
@@ -196,8 +201,8 @@
 .testimonials__image-author-service-wrapper {
     display: flex;
     align-items: center;
-    padding-top: 7,5px;
-    padding-bottom: 7,5px;
+    padding-top: 7, 5px;
+    padding-bottom: 7, 5px;
 }
 
 .testimonials__image-container-wrapper {
