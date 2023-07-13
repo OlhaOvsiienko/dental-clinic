@@ -212,3 +212,40 @@
     overflow: hidden;
     margin-right: 15px;
 }
+
+.testimonials__slider .slick-next, .testimonials__slider .slick-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: 0;
+    background: radial-gradient(#1b4f49 40%, transparent 50%);
+    background-position-y: -2px;
+}
+
+.testimonials__slider .slick-next:before, .testimonials__slider .slick-prev:before {
+    font-family: slick;
+    font-size: 30px;
+    opacity: 0.85;
+    color: black; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.testimonials__slider .slick-next {
+    right: 0px;
+}
+
+.testimonials__slider .slick-prev {
+    left: 0px;
+}
