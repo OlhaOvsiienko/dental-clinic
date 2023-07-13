@@ -1,92 +1,91 @@
-@media (min-width: 500px) {
+@media (min-width: 768px) {
 
    .booking-form,
-   .booking__description {
-      padding-top: 0px;
-      padding-bottom: 0px;
-   }
+   .booking__description,
+   .container-field
 }
 
 .booking-form {
    background: url('../img/background-book-visit-new.jpg');
-   background-size: 100% 100%;
+   background-size: cover;
    background-repeat: no-repeat;
-   background-position: center;
-
+   display: grid;
+   flex-direction: column;
+   padding-top: 135px;
+   padding-bottom: 135px;
 }
 
 .booking-form__container {
    border-radius: 34px;
    background-color: white;
    display: grid;
-   width: 25%;
-   height: 60%;
-   position: relative;
-   top: 25px;
-   left: 200px;
+   grid-template-columns: 1fr;
+   padding: 60px 100px 60px 100px;
 }
 
 .container-title {
    font-size: 32px;
    color: #1b4f49;
-   margin: 24px 0px 24px 0px;
+   margin-bottom: 25px;
    text-align: center;
 }
 
+.container-field {
+   width: 100%;
+}
 .container-field-input {
    background-color: #1B4F491F;
    border-color: #1B4F491F;
    border-radius: 34px;
    margin: 12px 0px 0px 0px;
    color: rgba (27, 79, 73, 0.12);
-   width: 295.4px;
-   height: 40.8px;
+   padding: 12px 24px 12px 24px;
+   width: 100%;
 
 }
 
-
+#clinic {
+   color: rgba (27, 79, 73, 0.12);
+}
 .button-send {
    background-color: rgb(27, 79, 73);
    color: white;
-   width: 295.4px;
-   height: 40.8px;
    border-radius: 34px;
-   margin: 48px 0px 48px 0px;
-
+   margin: 56px 0px 0px 0px;
+   padding: 12px 24px 12px 24px;
+   width: 100%;
 }
 
 .booking__description {
    background-color: rgb(234, 112, 53);
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   padding: 24px 200px 24px 200px;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   display: flex;
+   flex: 1;
+   padding: 10px 15px 10px 15px;
+   
 }
 
 .booking__description-best-dental {
-   font-size: 24px;
+   font-size: 32px;
    color: white;
-   font-weight: bold;
+   text-align: center;
+
 }
 
 .booking__description-ensure-children {
-   font-size: 14px;
+   font-size: 17px;
    color: #FFFFFF94;
    font-style: italic;
 }
 
 .booking__button {
    color: #1b4f49;
-   font-size: 10px;
+   font-size: 14px;
    font-family: Roboto, sans-serif;
    border-radius: 34px;
    background-color: rgb(245, 243, 239);
    padding: 12px 24px 12px 24px;
    font-weight: bold;
-   border-radius: 34px;
-
-
-
+   display: grid;
+   place-items: center;
+}
 }
