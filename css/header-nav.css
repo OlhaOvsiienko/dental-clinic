@@ -62,7 +62,7 @@
 }
 
 .line-for-info {
-    display: flex;
+    display: none;
     list-style: none;
     padding: 0;
     justify-content: flex-end;
@@ -70,6 +70,12 @@
     background-color: rgb(225, 227, 222);
     height: 80px;
     text-align: right;
+}
+
+@media (min-width:994px) {
+    .line-for-info{
+        display: flex;
+    }
 }
 
 .line-for-info li {
@@ -107,4 +113,57 @@
 .line-and-menu {
     background-color: rgb(225, 227, 222);
     width: 100%;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.bar {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #1b4f49;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.bar::before,
+.bar::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #1b4f49;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+.bar::before {
+    top: -8px;
+    left: -2px; /* Adjust the value to move the line towards the left */
+}
+
+.bar::after {
+    bottom: -8px;
+    left: -8px; /* Adjust the value to move the line towards the left */
+}
+
+
+
+
+@media (max-width: 992px) {
+    .hamburger {
+        display: block;
+    }
+    .content{
+        display: none;
+    }
 }
