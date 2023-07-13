@@ -15,16 +15,17 @@
         </div>
         <div class="container-field-dentist">
           <label for="dentist" class="container-field-label"></label>
-          <select id="dentist" name="dentist" class="container-field-input" placeholder="Choose your dentist">
+          <select id="dentist" name="dentist" class="container-field-input" >
+            <option value="" disabled selected hidden class="container-field-input">Choose your dentist</option>
             <option value="emma-smith" class="container-input">Emma Smith</option>
             <option value="eliza-brown" class="container-input">Eliza Brown</option>
-            <option value="john-foster" class="-container-input">John Foster</option>
+            <option value="john-foster" class="container-input">John Foster</option>
           </select>
         </div>
         <div class="container-field-address">
-          <label for="clinic" class="container-field-label">
-          </label>
+          <label for="clinic" class="container-field-label"></label>
           <select id="clinic" name="clinic" class="container-field-input">
+            <option value="" disabled selected hidden class="container-field-input">Select your clinic</option>
             <option value="ny">55 Lexington Ave, NY</option>
             <option value="la">100 S Main St, LA</option>
           </select>

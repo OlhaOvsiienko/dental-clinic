@@ -1,29 +1,29 @@
 @media (min-width: 500px) {
 
    .booking-form,
-   .booking__description {
-      padding-top: 0px;
-      padding-bottom: 0px;
+   .booking__description,
+   .container-field,
+   .button-send {
+      
    }
 }
 
 .booking-form {
    background: url('../img/background-book-visit-new.jpg');
-   background-size: 100% 100%;
+   background-size: cover;
    background-repeat: no-repeat;
-   background-position: center;
-
+  
+   
 }
 
 .booking-form__container {
    border-radius: 34px;
    background-color: white;
    display: grid;
+   padding: 24px 24px 24px; 24px;
    width: 25%;
    height: 60%;
-   position: relative;
-   top: 25px;
-   left: 200px;
+   position: right;
 }
 
 .container-title {
@@ -31,7 +31,7 @@
    color: #1b4f49;
    margin: 24px 0px 24px 0px;
    text-align: center;
-}
+  }
 
 .container-field-input {
    background-color: #1B4F491F;
@@ -41,6 +41,7 @@
    color: rgba (27, 79, 73, 0.12);
    width: 295.4px;
    height: 40.8px;
+   
 
 }
 
