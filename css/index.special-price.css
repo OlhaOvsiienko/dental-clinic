@@ -1,24 +1,200 @@
+.star-svg {
+    width: 25px;
+    height: 25px;
+}
+
+.special-price_content {
+    display: block;
+    min-height: 830px;
+}
+
 .special-price {
     background-image: url(../img/bckgr-srec-prc-boy.png);
     background-size: cover;
+    background-position: right;
+}
+
+.special-price__clouds-footer {
+    width: auto;
+    height: 124px;
+    background-image: url(../img/clouds.svg);
+    background-size: cover;
     background-position: center;
-    min-height: 945.98px;
+}
+/* -----------------header setting-------------------- */
 
+.special-price__header {
+    display: flex;
+    align-items: center;
+    height: 200px;
 }
 
-.special-price__lbox {
-    max-width: 1024px;
+.special-price__header-logo {
+    display: flex;
+    margin-left: 0px;
 }
 
-.special-price__fbox-name {
+.special-price__header-logo-name {
     color: #FFF;
     font-family: Fredoka;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: 30.8px;
+    padding-left: 10px;
 }
 
-.special-price__fbox {
-    max-width: 1024px;
+.special-price__header-logo-star {
+    margin-top: 5px;
 }
+
+.special-price__header-link {
+    margin-right: 0px;
+}
+
+.special-price__header-link-text {
+    color: #FFF;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26.52px;
+    text-decoration-line: underline;
+}
+
+.special-price__header-link-arrow {
+    color: #FFF;
+}
+
+/* ----------------------main settings------------------------- */
+
+.special-price__main {
+    display: flex;
+    margin: 0;
+}
+
+.special-price__main-lbox {
+    width: 470px;
+    /* height: 476px; */
+    max-width: 470px;
+    margin-left: 0;
+}
+
+.special-price__main-lbox-header {
+    color: #F5F3EF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20.04px;
+    letter-spacing: 2.4px;
+    margin: 0;
+
+}
+
+.special-price__main-lbox-title {
+    color: #FFF;
+    font-family: Fredoka;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 74.4px;
+    margin: 20px 0 0 0;
+}
+
+.special-price__main-lbox-subtitle {
+    color: rgba(245, 243, 239, 0.88);
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24.7px;
+    margin: 40px 0 0 0;
+}
+
+.special-price__main-lbox-text {
+    color: rgba(245, 243, 239, 0.84);
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.52px;
+    margin: 25px 0 55px 0;
+}
+
+.special-price__main-lbox-button {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15.4px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.252px;
+}
+
+.button-orange {
+    background-color: var(--main-color-first);
+    padding: 15px 32px;
+    border-radius: 34px;
+    margin: 0;
+}
+
+.button-orange:hover {
+    background-color: #be4a0f;
+    transition: all 300ms ease;
+}
+
+/* --------------------------------rblock------------------------------------- */
+
+.special-price__main-rbox {
+    margin-right: 0;
+}
+
+/* .price-box {
+    margin: 0 10px 0 0;
+} */
+
+.special-price__main-rbox-star {
+    margin: 105px 10px 0 185px;
+}
+
+.special-price__main-rbox-text {
+    color: rgba(245, 243, 239, 0.84);
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26.52px;
+    margin: 100px 10px 0 140px;
+}
+
+.special-price__main-rbox-price {
+    color: #FFF;
+    font-family: Fredoka;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 168px;
+    margin: -25px 10px 0 0;
+}
+
+/* --------------------footer----------------------------- */
+
+.special-price__footer {
+    margin: 70px 0 0 0;
+    max-width: 410px;
+    padding: 0;
+
+}
+
+.special-price__footer-note {
+    color: rgba(245, 243, 239, 0.84);
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+/* ---------------media-------------------- */
