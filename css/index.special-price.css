@@ -5,16 +5,22 @@
 
 .special-price_content {
     display: block;
-    min-height: 946px;
+    min-height: 830px;
 }
 
 .special-price {
     background-image: url(../img/bckgr-srec-prc-boy.png);
-    background-position: center;
     background-size: cover;
-    background-color: #EA7035;
+    background-position: right;
 }
 
+.special-price__clouds-footer {
+    width: auto;
+    height: 124px;
+    background-image: url(../img/clouds.svg);
+    background-size: cover;
+    background-position: center;
+}
 /* -----------------header setting-------------------- */
 
 .special-price__header {
@@ -131,11 +137,64 @@
     background-color: var(--main-color-first);
     padding: 15px 32px;
     border-radius: 34px;
-    margin:0;
+    margin: 0;
 }
 
 .button-orange:hover {
     background-color: #be4a0f;
     transition: all 300ms ease;
 }
+
 /* --------------------------------rblock------------------------------------- */
+
+.special-price__main-rbox {
+    margin-right: 0;
+}
+
+/* .price-box {
+    margin: 0 10px 0 0;
+} */
+
+.special-price__main-rbox-star {
+    margin: 105px 10px 0 185px;
+}
+
+.special-price__main-rbox-text {
+    color: rgba(245, 243, 239, 0.84);
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26.52px;
+    margin: 100px 10px 0 140px;
+}
+
+.special-price__main-rbox-price {
+    color: #FFF;
+    font-family: Fredoka;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 168px;
+    margin: -25px 10px 0 0;
+}
+
+/* --------------------footer----------------------------- */
+
+.special-price__footer {
+    margin: 70px 0 0 0;
+    max-width: 410px;
+    padding: 0;
+
+}
+
+.special-price__footer-note {
+    color: rgba(245, 243, 239, 0.84);
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+/* ---------------media-------------------- */
