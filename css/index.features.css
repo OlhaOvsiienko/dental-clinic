@@ -1,0 +1,30 @@
+.features-head{
+    text-align: center;
+}
+
+.features__item{
+
+}
+
+.blocks__divider-component{
+    width: 72px;
+    height: 3px;
+    background-color: var(--main-color-first);
+    display: inline-block;
+}
+
+.side-block__item{
+
+}
+
+@media (min-width: 768px){
+    .features__content{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .features-items-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
