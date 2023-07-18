@@ -122,7 +122,7 @@
     align-items: center;
     justify-content: center;
   }
-  .services__card-restorative-fon--img {
+  .services__card-restorative-bg--img {
     width: 26px;
     justify-content: center;
     text-align: left;
@@ -191,7 +191,7 @@
     align-items: center;
     justify-content: center;
   }
-  .services__card-preventive-fon--img {
+  .services__card-preventive-bg--img {
     width: 26px;
     display: flex;
     justify-content: center;
@@ -261,7 +261,7 @@
     align-items: center;
     justify-content: center;
   }
-  .services__card-treatment-fon--img {
+  .services__card-treatment-bg--img {
     width: 26px;
     display: flex;
     justify-content: center;
