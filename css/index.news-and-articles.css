@@ -92,7 +92,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
     align-items: center;
     font-weight: 700;
     padding: 16px 32px;
-    /*margin-top: 51px;*/
+    margin-top: 51px;
 }
 
 .news-and-articles__content-block {
