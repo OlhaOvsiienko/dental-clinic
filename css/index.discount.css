@@ -1,0 +1,62 @@
+.discount {
+    margin-top: 50xp;
+    margin-bottom: 90px;
+    padding: 0 15px;
+}
+
+.diccount-description {
+    background-image: url(../img/discount-main-img.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 51px 39px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.discount__title {
+    font-family: ;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.discount-text {
+    font-size: 19px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.discount-link {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 16px 32px;
+    color: white;
+    background-color: var(--main-color-second);
+    border-radius: 34px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.discount-subtitle {
+    color: var(--main-color-first);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+@media (min-width: 768px) {
+    .diccount-description {
+        padding: 90px 60px;
+        border-radius: 30px;
+        display: block;
+    }
+
+    .discount {
+        margin-top: 55xp;
+        margin-bottom: 135px;
+    }
+}

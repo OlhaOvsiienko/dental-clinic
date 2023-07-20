@@ -77,6 +77,7 @@ font-weight: 500px;
     line-height: 21px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 margin-top: 20px;
+line-height: 21px;
 }
 
 .side-block__availability-list{
@@ -93,6 +94,7 @@ margin-top: 20px;
     color: #29498c;
        font-weight: 400;
         font-size: 14px;
+        line-height: 22.5px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -126,5 +128,9 @@ margin-top: 20px;
         margin: auto; 
                margin-top: 0;  
               height: auto;
+              padding: 40px;
+    }
+    .side-blocks__note{
+        margin-top: 28px;
     }
 }
