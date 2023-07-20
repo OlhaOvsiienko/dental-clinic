@@ -32,9 +32,15 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    max-width: 1200px;
+/* .container {
+    max-width: 719px;
 }
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1200px;
+    }
+} */
 
 h2 {
     font-size: 34px;
