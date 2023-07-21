@@ -1,6 +1,6 @@
 // Messi Goals https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
 
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 
@@ -9,26 +9,24 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 function makeNegative(num) {
   if (num >= 0) {
     return -num;
-  }
-  else {
+  } else {
     return num;
   }
 }
 
 // Game Move https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
 
-function move (position, roll) {
-  return position + 2*roll;
+function move(position, roll) {
+  return position + 2 * roll;
 }
 
 // Personalized Message https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
 
-function greet (name, owner) {
+function greet(name, owner) {
   if (name === owner) {
-    return 'Hello boss';
-  } 
-  else {
-    return 'Hello guest';
+    return "Hello boss";
+  } else {
+    return "Hello guest";
   }
 }
 
@@ -40,13 +38,10 @@ function litres(time) {
 
 // Opposites Attract https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
 
-function lovefunc(flower1, flower2){
+function lovefunc(flower1, flower2) {
   if ((flower1 + flower2) % 2 === 0) {
     return false;
-  }
-  else {
+  } else {
     return true;
   }
 }
-
-
