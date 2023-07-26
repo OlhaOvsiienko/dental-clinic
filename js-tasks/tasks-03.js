@@ -18,7 +18,6 @@ class SmallestIntegerFinder {
 
 function circleCircumference(circle) {
     return 2 * Math.PI * circle.radius;
-    const circumference = circleCircumference(circle).toFixed(6);
 }
 
 // Task 3
@@ -26,7 +25,7 @@ function circleCircumference(circle) {
 
 function giveMeFive(obj) {
     const resultArray = [];
-    for (var key in obj) {
+    for (const key in obj) {
       if (key.length === 5) {
         resultArray.push(key);
       }
