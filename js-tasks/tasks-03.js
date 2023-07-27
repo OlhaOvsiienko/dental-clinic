@@ -1,94 +1,79 @@
-1. https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
+// Task 1
+// https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
+
 class SmallestIntegerFinder {
-  findSmallestInt(args) {
-for (let i = 0; i < args.length; i ++) {
-  if (args[i] < args[0]) {
-    args[0] = args[i];
-  }
-}
-return args[0];
-
-  }
-}
-
-2. https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
-function circleCircumference(circle) {
-    return (circle.radius * 2 * Math.PI);
+    findSmallestInt(args) {
+      let smallest = args[0];
+      for (let i = 1; i < args.length; i++) {
+        if (args[i] < smallest) {
+          smallest = args[i];
+        }
+      }
+      return smallest;
     }
+}
 
-3. https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
+// Task 2
+// https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
+
+function circleCircumference(circle) {
+    return 2 * Math.PI * circle.radius;
+}
+
+// Task 3
+// https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
+
 function giveMeFive(obj) {
-    const arrOfFive = [];
-    for (var key in obj) {
+    const resultArray = [];
+    for (const key in obj) {
       if (key.length === 5) {
-        arrOfFive.push(key);
+        resultArray.push(key);
       }
       if (obj[key].length === 5) {
-        arrOfFive.push(obj[key]);
+        resultArray.push(obj[key]);
       }
     }
-    return arrOfFive;
-  }
+    return resultArray;
+}
 
-  // additional
+// Task 4
+// https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 
-  4. https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
-  function buildFun(n){
-
-    var res = [];
+function buildFun(N) {
+    const result = [];
   
-    for (let i = 0; i< n; i++){
-      res.push(function(){
-        return (i);
+    for (let i = 0; i <= N; i++) {
+      result.push(function () {
+        return i;
       });
     }
-    return res;
-  }
+  
+    return result;
+}
 
-  5. https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript
+// Task 5
+// https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript
 
 class Shark extends Animal {
-  constructor (name, age, status) {
-    super();
-    this.name = name;
-    this.age = age;
-    this.legs = 0;
-    this.status = status;
-    this.species = 'shark';
-  }
-  introduce()   {
-    return `Hello, my name is ${this.name} and I am ${this.age} years old.`; 
-                }
+    constructor(name, age, status) {
+      super(name, age, 0, "shark", status);
+    }
 }
-
-class Cat extends Animal {
-  constructor (name, age, status) {
-    super();
-    this.name = name;
-    this.age = age;
-    this.legs = 4;
-    this.status = status;
-    this.species = 'cat';
-  }
-  introduce() {
-    return `Hello, my name is ${this.name} and I am ${this.age} years old.  Meow meow!`; 
-  }
+  class Cat extends Animal {
+    constructor(name, age, status) {
+      super(name, age, 4, "cat", status);
+    }
+    introduce() {
+      return `${super.introduce()}  Meow meow!`;
+    }
 }
-
-class Dog extends Animal {
-  constructor (name, age, status, master) {
-    super();
-    this.name = name;
-    this.age = age;
-    this.legs = 4;
-    this.status = status;
-    this.species = 'dog';
-    this.master = master;
-  }
-  introduce() {  
-    return `Hello, my name is ${this.name} and I am ${this.age} years old.`; 
-  }
-  greetMaster() {
-    return `Hello ${this.master}`
-  }
+  class Dog extends Animal {
+    constructor(name, age, status, master) {
+      super(name, age, 4, "dog", status);
+      this.master = master;
+    }
+    greetMaster() {
+      return `Hello ${this.master}`;
+    }
 }
+  
