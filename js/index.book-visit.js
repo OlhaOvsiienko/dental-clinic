@@ -1,3 +1,15 @@
+function checkPhoneNumberFormat() {
+  const phoneInput = document.getElementById("phone");
+  const errorMessage = document.getElementById("errorMessage");
+
+  const phonePattern = /^\d{12}$/;
+  if (!phonePattern.test(phoneInput.value)) {
+    errorMessage.style.display = "block";
+  } else {
+    errorMessage.style.display = "none";
+  }
+}
+
 function validateForm() {
   const name = document.getElementById("name").value;
   const phone = document.getElementById("phone").value;
@@ -10,8 +22,9 @@ function validateForm() {
     dentist === "" ||
     clinic === ""
   ) {
-    alert("Fill in required fields");
+    document.getElementById("errorMessage").style.display = "block";
     return false;
   }
-  return true;
+
+    return true;
 }

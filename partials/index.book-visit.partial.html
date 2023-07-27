@@ -12,11 +12,12 @@
         <div class="container-field-phone">
           <label for="phone" class="container-field-label"></label>
           <input type="tel" id="phone" name="phone" placeholder="Enter your phone number*" required
-            class="container-field-input">
+            class="container-field-input" oninput="checkPhoneNumberFormat()">
+            <div id="errorMessage" style="display: none; color: red;" lang="en">Enter the number in 12 digit format (for example, 380505522111)</div>
         </div>
         <div class="container-field-dentist">
           <label for="dentist" class="container-field-label"></label>
-          <select id="dentist" name="dentist" class="container-field-input">
+          <select id="dentist" name="dentist" class="container-field-input" required>
             <option value="" disabled selected hidden class="container-input">Choose your dentist</option>
             <option value="emma-smith" class="container-input">Emma Smith</option>
             <option value="eliza-brown" class="container-input">Eliza Brown</option>
@@ -25,7 +26,7 @@
         </div>
         <div class="container-field-address">
           <label for="clinic" class="container-field-label"></label>
-          <select id="clinic" name="clinic" class="container-field-input">
+          <select id="clinic" name="clinic" class="container-field-input" required>
             <option value="" disabled selected hidden class="container-input">Select the clinic</option>
             <option value="ny" class="container-input">55 Lexington Ave, NY</option>
             <option value="la" class="container-input">100 S Main St, LA</option>
@@ -42,7 +43,7 @@
 
         
       </form>
-
+      <div id="errorMessage" style="display: none; color: red;">Fill in the form, please</div>
     </div>
   </div>
 </section>
