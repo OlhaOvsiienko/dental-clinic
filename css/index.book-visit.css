@@ -1,111 +1,110 @@
+.booking-form {
+   background: url('../img/background-book-visit-new.jpg');
+   background-size: cover;
+     background-repeat: no-repeat;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding-top: 135px;
+   padding-bottom: 135px;
+   padding-right: 5px;
+}
+
+.booking-form-field {
+   border-radius: 34px;
+   background-color: white;
+   display: grid;
+   grid-column: 3;
+   padding: 10% 15% 10% 15%;
+}
+
+.container-title {
+   font-size: 32px;
+   color: var(--main-color-second);
+   margin-bottom: 25px;
+   text-align: center;
+}
+
+.container-field {
+   width: 100%;
+   color: var(--text-color-first);
+}
+
+.container-field-input {
+   background-color: #1B4F491F;
+   border-color: transparent;
+   border-radius: 34px;
+   margin: 12px 0px 0px 0px;
+   padding: 12px 24px 12px 24px;
+   width: 100%;
+   color: var(--text-color-first);
+   font-size: 14px;
+}
+
+.button-send {
+   background-color: var(--main-color-second);
+   color: white;
+   border-radius: 34px;
+   margin: 56px 0px 0px 0px;
+   padding: 12px 24px 12px 24px;
+   width: 100%;
+}
+
+.booking__description {
+   background-color: var(--main-color-first);
+   display: flex;
+   flex: 1;
+   padding: 10px 15px 10px 15px;
+   text-align: center;
+   align-items: center;
+
+}
+
+@media (max-width: 768px) {
    .booking-form {
       background: url('../img/background-book-visit-new.jpg');
       background-size: cover;
-      background-position: 10% 10%;
       background-repeat: no-repeat;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      padding-top: 135px;
-      padding-bottom: 135px;
-      padding-right: 25px;
-   }
-
-   .booking-form-field {
-      border-radius: 34px;
-      background-color: white;
-      display: grid;
-      grid-column: 3;
-      padding: 10% 15% 10% 15%;
-   }
-
-   .container-title {
-      font-size: 32px;
-      color: var(--main-color-second);
-      margin-bottom: 25px;
-      text-align: center;
-   }
-
-   .container-field {
-      width: 100%;
-      color: var(--text-color-first);
-   }
-
-   .container-field-input {
-      background-color: #1B4F491F;
-      border-color: transparent;
-      border-radius: 34px;
-      margin: 12px 0px 0px 0px;
-      padding: 12px 24px 12px 24px;
-      width: 100%;
-      color: var(--text-color-first);
-      font-size: 14px;
-   }
-
-   .button-send {
-      background-color: var(--main-color-second);
-      color: white;
-      border-radius: 34px;
-      margin: 56px 0px 0px 0px;
-      padding: 12px 24px 12px 24px;
-      width: 100%;
+      display: flex;
+      flex: 1;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-left: 25px;
    }
 
    .booking__description {
-      background-color: var(--main-color-first);
-      display: flex;
-      flex: 1;
-      padding: 10px 15px 10px 15px;
-      text-align: center;
-      align-items: center;
-
-   }
-
-   @media (max-width: 768px) {
-      .booking-form {
-         background: url('../img/background-book-visit-new.jpg');
-         background-size: cover;
-         background-repeat: no-repeat;
-         display: flex;
-         flex: 1;
-         padding-top: 35px;
-         padding-bottom: 35px;
-         padding-left: 25px;
-      }
-
-      .booking__description {
-         display: grid;
-         grid-template-columns: 1fr;
-         text-align: center;
-         justify-content: center;
-      }
-
-      .container-input {
-         color: var(--text-color-first);
-         font-size: 12px;
-      }
-   }
-
-   .booking__description-best-dental {
-      font-size: 32px;
-      color: white;
-   }
-
-   .booking__description-ensure-children {
-      font-size: 17px;
-      color: #FFFFFF94;
-      font-style: italic;
+      display: grid;
+      grid-template-columns: 1fr;
       text-align: center;
       justify-content: center;
    }
 
-   .booking__button {
-      color: var(--main-color-second);
-      font-size: 14px;
-      font-family: Roboto, sans-serif;
-      border-radius: 34px;
-      background-color: var(--background-color);
-      padding: 12px 24px 12px 24px;
-      font-weight: bold;
-      display: grid;
-      place-items: center;
+   .container-input {
+      color: var(--text-color-first);
+      font-size: 12px;
    }
+}
+
+.booking__description-best-dental {
+   font-size: 32px;
+   color: white;
+}
+
+.booking__description-ensure-children {
+   font-size: 17px;
+   color: #FFFFFF94;
+   font-style: italic;
+   text-align: center;
+   justify-content: center;
+}
+
+.booking__button {
+   color: var(--main-color-second);
+   font-size: 14px;
+   font-family: Roboto, sans-serif;
+   border-radius: 34px;
+   background-color: var(--background-color);
+   padding: 12px 24px 12px 24px;
+   font-weight: bold;
+   display: grid;
+   place-items: center;
+}
