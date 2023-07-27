@@ -1,29 +1,30 @@
-.features{
-padding: 45px 24px 90px;
+.features {
+    padding: 45px 24px 90px;
 }
-.features-head{
+
+.features-head {
     text-align: center;
 }
 
-.features__sub-title{
+.features__sub-title {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.2rem;
     color: var(--main-color-first);
 }
 
-.features__description{
+.features__description {
     margin-top: 25px;
     font-weight: 700;
     font-size: 19px;
 }
 
-.features__content{
+.features__content {
     margin-top: 45px;
     /* padding: 0 24px; */
 }
 
-.blocks__image-container{
+.blocks__image-container {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -32,16 +33,16 @@ padding: 45px 24px 90px;
     padding: 12px;
 }
 
-.item-icon{
+.item-icon {
     width: 26px;
 }
 
-.item-title{
+.item-title {
     margin-top: 20px;
     color: var(--main-color-second);
 }
 
-.blocks__divider-component{
+.blocks__divider-component {
     width: 72px;
     height: 3px;
     background-color: var(--main-color-first);
@@ -49,88 +50,90 @@ padding: 45px 24px 90px;
     margin: 15px 0;
 }
 
-.blocks__description{
+.blocks__description {
     color: var(--text-color-first);
     font-size: 17px;
     font-weight: 400;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.side-block__item{
+.side-block__item {
     margin-top: 60px;
-        padding: 30px;
-        background-color: #ddeaff;
-        border-radius: 15px;
+    padding: 30px;
+    background-color: #ddeaff;
+    border-radius: 15px;
 }
 
-.side-bock__title{
-color: #29498c;
-font-size: 22px;
-line-height: 30.8px;
-font-weight: 500px;
+.side-bock__title {
+    color: #29498c;
+    font-size: 22px;
+    line-height: 30.8px;
+    font-weight: 500px;
 }
 
-.availability__item{
+.availability__item {
     color: #29498c;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-margin-top: 20px;
-line-height: 21px;
+    margin-top: 20px;
+    line-height: 21px;
 }
 
-.side-block__availability-list{
+.side-block__availability-list {
     margin-top: 20px;
 }
 
-.time{
+.time {
     font-style: italic;
     font-weight: 400;
 }
 
-.side-blocks__note{
+.side-blocks__note {
     font-style: italic;
     color: #29498c;
-       font-weight: 400;
-        font-size: 14px;
-        line-height: 22.5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.5px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.features-link{
+.features-link {
     text-decoration: underline;
     color: #29498c;
 }
 
-.side-block__divider-component{
+.side-block__divider-component {
     margin: 15px 0;
     height: 1px;
-    background-color:  rgb(27, 79, 73);
+    background-color: rgb(27, 79, 73);
     width: auto;
 }
 
-@media (min-width: 768px){
-    .features{
+@media (min-width: 768px) {
+    .features {
         padding: 65px 15px 135px;
     }
-    .features__content{
+
+    .features__content {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         justify-content: center;
     }
 
-    .features__item{
+    .features__item {
         margin-right: 20px;
     }
 
-    .side-block__item{
-        margin: auto; 
-               margin-top: 0;  
-              height: auto;
-              padding: 40px;
+    .side-block__item {
+        margin: auto;
+        margin-top: 0;
+        height: auto;
+        padding: 40px;
     }
-    .side-blocks__note{
+
+    .side-blocks__note {
         margin-top: 28px;
     }
 }

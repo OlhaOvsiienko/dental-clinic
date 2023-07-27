@@ -43,8 +43,8 @@ body {
 } */
 
 h2 {
+    font-family: "Fredoka", sans-serif;
     font-size: 34px;
-    font-family: var(--title-font-family);
     font-weight: 500;
     color: var(--main-color-second);
     margin-top: 20px;
