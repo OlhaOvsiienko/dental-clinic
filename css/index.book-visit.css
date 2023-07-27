@@ -4,9 +4,10 @@
      background-repeat: no-repeat;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 0px;
    padding-top: 135px;
    padding-bottom: 135px;
-   padding-right: 5px;
+   
 }
 
 .booking-form-field {
@@ -15,6 +16,7 @@
    display: grid;
    grid-column: 3;
    padding: 10% 15% 10% 15%;
+   justify-items: stretch;
 }
 
 .container-title {

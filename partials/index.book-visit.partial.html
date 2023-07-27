@@ -2,16 +2,17 @@
   <div class="booking-form-field">
     <h2 class="container-title">Book a Visit Now!</h2>
     <div class="container-field">
-      <form action="https://formspree.io/f/mbjvjloy" method="post" class="booking-field">
+      <form action="partials/index.book-visit-confirmation.html" method="post" class="booking-field"
+        onsubmit="return validateForm()">
         <div class="container-field-name">
           <label for="name" class="container-field-label"></label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name*" class="container-field-input">
+          <input type="text" id="name" name="name" placeholder="Enter your full name*" class="container-field-input"
+            required>
         </div>
         <div class="container-field-phone">
           <label for="phone" class="container-field-label"></label>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{12}" placeholder="Enter your phone number*" required
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number*" required
             class="container-field-input">
-          <small class="frame-small"></small>
         </div>
         <div class="container-field-dentist">
           <label for="dentist" class="container-field-label"></label>
@@ -40,6 +41,7 @@
         </div>
     </div>
     </form>
+
   </div>
   </div>
 </section>
@@ -49,4 +51,4 @@
     <p class="booking__description-ensure-children">Ensure your children's oral health! Make an appointment.</p>
     <a href="#" class="booking__button">Shedule a Visit</a>
   </div>
-</section> 
+</section>
