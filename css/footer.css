@@ -147,13 +147,13 @@ a {
     color: var(--main-color-second);
 }
 
-.footer-contacts-description {
+.footer-contacts-description, .footer-contacts-description-link {
     font-size: 17px;
     font-weight: 400;
     color: var(--text-color-first);
 }
 
-.footer-contacts-description:hover {
+.footer-contacts-description-link:hover {
     text-decoration: underline;
 }
 

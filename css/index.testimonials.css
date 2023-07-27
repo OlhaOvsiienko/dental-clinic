@@ -27,6 +27,7 @@
     font-size: 19px;
     font-weight: 500;
     margin-top: 25px;
+    margin-bottom: 45px;
     text-align: center;
     display: block;
 }
@@ -49,59 +50,59 @@
 }
 
 .testimonials__item-katy {
-    background-color: rgb(221, 234, 255);
+    background-color: var(--testimonials-background-color-katy);
 }
 
 .testimonials__item-mark {
-    background-color: rgb(225, 227, 222);
+    background-color: var(--testimonials-background-color-mark-jane);
 }
 
 .testimonials__item-lucy {
-    background-color: rgb(249, 236, 215);
+    background-color: var(--testimonials-background-color-lucy);
 }
 
 .testimonials__item-jane {
-    background-color: rgb(225, 227, 222);
+    background-color: var(--testimonials-background-color-mark-jane);
 }
 
 .testimonials__item-katy .testimonials__author,
 .testimonials__item-katy svg {
-    color: #29498c;
+    color: var(--testimonials-svg-color-katy);
 }
 
 .testimonials__item-mark .testimonials__author,
 .testimonials__item-mark svg {
-    color: #1b4f49;
+    color: var(--testimonials-svg-color-mark-jane);
 }
 
 .testimonials__item-lucy .testimonials__author,
 .testimonials__item-lucy svg {
-    color: #ea7035;
+    color: var(--testimonials-svg-color-lucy);
 }
 
 .testimonials__item-jane .testimonials__author,
 .testimonials__item-jane svg {
-    color: #1b4f49;
+    color: var(--testimonials-svg-color-mark-jane);
 }
 
 .testimonials__item-katy .testimonials__comment,
 .testimonials__item-katy .testimonials__service {
-    color: rgb(93, 120, 177);
+    color: var(--tesimonials-item-text-color-katy);
 }
 
 .testimonials__item-mark .testimonials__comment,
 .testimonials__item-mark .testimonials__service {
-    color: rgb(119, 140, 137);
+    color: var(--tesimonials-item-text-color-mark-jane);
 }
 
 .testimonials__item-lucy .testimonials__comment,
 .testimonials__item-lucy .testimonials__service {
-    color: rgb(219, 153, 121);
+    color: var(--tesimonials-item-text-color-lucy);
 }
 
 .testimonials__item-jane .testimonials__comment,
 .testimonials__item-jane .testimonials__service {
-    color: rgb(119, 140, 137);
+    color: var(--tesimonials-item-text-color-mark-jane);
 }
 
 .testimonials__svg-wrapper {
@@ -262,6 +263,10 @@
 @media (min-width: 992px) {
     .testimonials__subtitle {
         font-size: 44px;
+    }
+
+    .testimonials__description {
+        margin-bottom: 50px;
     }
 
     .testimonials__item {

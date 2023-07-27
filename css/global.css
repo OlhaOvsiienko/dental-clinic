@@ -21,6 +21,15 @@
     --main-color-second: rgb(27, 79, 73);
     --text-color-first: rgb(119, 140, 137);
     --text-color-second: rgb(95, 118, 115);
+    --testimonials-background-color-katy: rgb(221, 234, 255);
+    --testimonials-background-color-mark-jane: rgb(225, 227, 222);
+    --testimonials-background-color-lucy: rgb(249, 236, 215);
+    --testimonials-svg-color-katy: #29498c;
+    --testimonials-svg-color-mark-jane: #1b4f49;
+    --testimonials-svg-color-lucy: #ea7035;
+    --tesimonials-item-text-color-katy: rgb(93, 120, 177);
+    --tesimonials-item-text-color-mark-jane: rgb(119, 140, 137);
+    --tesimonials-item-text-color-lucy: rgb(219, 153, 121);
     --text-font-family: 'Roboto', sans-serif;
     font-size: 17px;
     font-family: "Fredoka", sans-serif;
