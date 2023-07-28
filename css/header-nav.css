@@ -164,14 +164,14 @@
     display: none;
 }
 
-.bar.active::before {
-    top: 50%;
-    transform: translate(-50%, 0%) rotate(-45deg);  
-  }
-
- .bar.active::after{
+.bar.active::before{
     bottom: 50%;
     transform: translate(50%, 0%) rotate(45deg);  
+  }
+
+.bar.active::after {
+    top: 50%;
+    transform: translate(50%, 0%) rotate(-45deg);  
   }
 
 @media (max-width: 991px) {
