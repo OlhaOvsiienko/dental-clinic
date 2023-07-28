@@ -5,5 +5,4 @@ function callNumber () {
 
 document.getElementById('phone-number').addEventListener("click", callNumber);
 
-let link = document.querySelector('.footer-navigation-link');
-link.style.color = "red";
+
