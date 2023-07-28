@@ -1,4 +1,4 @@
-document.addEventListener('partials', () => {
+document.addEventListener('partialsLoaded', () => {
   import('./header-nav.js');
   import('./header.js');
   import('./index.testimonials-slider.js');
