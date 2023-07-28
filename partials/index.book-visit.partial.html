@@ -2,22 +2,19 @@
   <div class="form-field">
     <h2 class="form-title">Book a Visit Now!</h2>
     <div class="form-container">
-      <form action="partials/index.book-visit-confirmation.html" method="post" class="booking-form"
-        onsubmit="return validateForm()">
+      <form action="partials/index.book-visit-confirmation.html" method="post" class="booking-form" onsubmit="return validateForm()">
         <div class="field-name">
           <label for="name" class="field-name-label"></label>
-          <input type="text" id="name" name="messageName" placeholder="Enter your full name*" class="field-input"
-            required>
-            <div id="errorMessageName" style="display: none; color: red;">Fill in this field, please</div>
+          <input type="text" id="name" name="messageName" placeholder="Enter your full name*" class="field-input" required>
+          <div id="errorMessageName" style="display: none; color: red;">Fill in this field, please</div>
         </div>
         <div class="field-phone">
           <label for="phone" class="field-phone-label"></label>
-          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number*" required
-            class="field-input" oninput="checkPhoneNumberFormat()">
-            <div id="errorMessagePhone" style="display: none; color: red;" lang="en">Enter the number in 12 digit format (for example, 380505522111)</div>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number*" required class="field-input" oninput="checkPhoneNumberFormat()">
+          <div id="errorMessagePhone" style="display: none; color: red;" lang="en">Enter the number in 12 digit format (for example, 380505522111)</div>
         </div>
         <div class="field-dentist">
-          <label for="dentist" class="cfield-dentist-label"></label>
+          <label for="dentist" class="field-dentist-label"></label>
           <select id="dentist" name="dentist" class="field-input" required>
             <option value="" disabled selected hidden class="field-input">Choose your dentist</option>
             <option value="emma-smith" class="field-input">Emma Smith</option>
@@ -33,10 +30,9 @@
             <option value="la" class="field-input">100 S Main St, LA</option>
           </select>
         </div>
-        <div class="field-messege">
+        <div class="field-message">
           <label for="message" class="field-message-label"></label>
-          <input type="text" id="messege" name="name" placeholder="Leave your message here"
-            class="field-input">
+          <input type="text" id="message" name="name" placeholder="Leave your message here" class="field-input">
         </div>
         
         <div class="field-button-send">
@@ -44,16 +40,15 @@
           <div id="errorMessage" style="display: none; color: red;">Fill in the form, please</div>
         </div>
 
-        
       </form>
-      
     </div>
   </div>
 </section>
+
 <section class="booking__description">
   <div class="booking__description">
     <p class="booking__description-best-dental">Best Dental Services For Kids</p>
     <p class="booking__description-ensure-children">Ensure your children's oral health! Make an appointment.</p>
-    <a href="#" class="booking__button">Shedule a Visit</a>
+    <a href="#" class="booking__button">Schedule a Visit</a>
   </div>
 </section>
