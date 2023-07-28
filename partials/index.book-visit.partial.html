@@ -1,49 +1,52 @@
-<section class="booking-form">
-  <div class="booking-form-field">
-    <h2 class="container-title">Book a Visit Now!</h2>
-    <div class="container-field">
-      <form action="partials/index.book-visit-confirmation.html" method="post" class="booking-field"
+<section class="booking">
+  <div class="form-field">
+    <h2 class="form-title">Book a Visit Now!</h2>
+    <div class="form-container">
+      <form action="partials/index.book-visit-confirmation.html" method="post" class="booking-form"
         onsubmit="return validateForm()">
-        <div class="container-field-name">
-          <label for="name" class="container-field-label"></label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name*" class="container-field-input"
+        <div class="field-name">
+          <label for="name" class="field-name-label"></label>
+          <input type="text" id="name" name="messageName" placeholder="Enter your full name*" class="field-input"
             required>
+            <div id="errorMessageName" style="display: none; color: red;">Fill in this field, please</div>
         </div>
-        <div class="container-field-phone">
-          <label for="phone" class="container-field-label"></label>
+        <div class="field-phone">
+          <label for="phone" class="field-phone-label"></label>
           <input type="tel" id="phone" name="phone" placeholder="Enter your phone number*" required
-            class="container-field-input" oninput="checkPhoneNumberFormat()">
-            <div id="errorMessage" style="display: none; color: red;" lang="en">Enter the number in 12 digit format (for example, 380505522111)</div>
+            class="field-input" oninput="checkPhoneNumberFormat()">
+            <div id="errorMessagePhone" style="display: none; color: red;" lang="en">Enter the number in 12 digit format (for example, 380505522111)</div>
         </div>
-        <div class="container-field-dentist">
-          <label for="dentist" class="container-field-label"></label>
-          <select id="dentist" name="dentist" class="container-field-input" required>
-            <option value="" disabled selected hidden class="container-input">Choose your dentist</option>
-            <option value="emma-smith" class="container-input">Emma Smith</option>
-            <option value="eliza-brown" class="container-input">Eliza Brown</option>
-            <option value="john-foster" class="container-input">John Foster</option>
+        <div class="field-dentist">
+          <label for="dentist" class="cfield-dentist-label"></label>
+          <select id="dentist" name="dentist" class="field-input" required>
+            <option value="" disabled selected hidden class="field-input">Choose your dentist</option>
+            <option value="emma-smith" class="field-input">Emma Smith</option>
+            <option value="eliza-brown" class="field-input">Eliza Brown</option>
+            <option value="john-foster" class="field-input">John Foster</option>
           </select>
         </div>
-        <div class="container-field-address">
-          <label for="clinic" class="container-field-label"></label>
-          <select id="clinic" name="clinic" class="container-field-input" required>
-            <option value="" disabled selected hidden class="container-input">Select the clinic</option>
-            <option value="ny" class="container-input">55 Lexington Ave, NY</option>
-            <option value="la" class="container-input">100 S Main St, LA</option>
+        <div class="field-address">
+          <label for="clinic" class="field-address-label"></label>
+          <select id="clinic" name="clinic" class="field-input" required>
+            <option value="" disabled selected hidden class="field-input">Select the clinic</option>
+            <option value="ny" class="field-input">55 Lexington Ave, NY</option>
+            <option value="la" class="field-input">100 S Main St, LA</option>
           </select>
         </div>
-        <div class="container-field-messege">
-          <label for="message" class="container-field-label"></label>
+        <div class="field-messege">
+          <label for="message" class="field-message-label"></label>
           <input type="text" id="messege" name="name" placeholder="Leave your message here"
-            class="container-field-input">
+            class="field-input">
         </div>
-        <div class="container-field-button-send">
+        
+        <div class="field-button-send">
           <input type="submit" value="Send" class="button-send" id="sendButton">
+          <div id="errorMessage" style="display: none; color: red;">Fill in the form, please</div>
         </div>
 
         
       </form>
-      <div id="errorMessage" style="display: none; color: red;">Fill in the form, please</div>
+      
     </div>
   </div>
 </section>
