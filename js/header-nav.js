@@ -1,15 +1,10 @@
-/*const menuBtn = document.querySelector('.hamburger');
 const menu = document.querySelector('.navigation-links');
-menuBtn.addEventListener('click', function(){
-	menu.style.transform = translateY(0);
-});
+const menuIcon = document.querySelector('.hamburger');
+const menuIconItem = document.querySelector('.bar');
+menuIcon.addEventListener("click", showNaw);
 
-	transition: transform 0.5s;  */
-
-function showNaw () {
-    const menu = document.querySelector('.navigation-links');
-    menu.style.transform = translateY(0);
-    menu.style.transition = transform 0.5s;
+function showNaw() {
+    menu.classList.toggle('active');
+    menuIconItem.classList.toggle('active');
 }
 
-document.querySelector('.hamburger').addEventListener("click", showNaw);

@@ -6,4 +6,3 @@ document.addEventListener('partials', () => {
   import('./index.book-visit.js');
   import('./footer.js');
 });
-import './styles.css'; 
