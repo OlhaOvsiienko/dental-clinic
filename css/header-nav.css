@@ -61,8 +61,7 @@
     padding: 8px;
 }
 
-.line-for-info {
-    display: none;
+.navigation-links {
     list-style: none;
     padding: 0;
     justify-content: flex-end;
@@ -70,24 +69,35 @@
     background-color: rgb(225, 227, 222);
     height: 80px;
     text-align: right;
+    position: fixed;
+	top: 0;
+	left: 0;
+    transform: translateX(-100%);
+	transition: transform 0.5s; 
 }
 
-@media (min-width:991px) {
-    .line-for-info{
+.navigation-links.active {
+	transform: translateX(0);
+}
+
+@media (min-width:992px) {
+    .navigation-links{
         display: flex;
+        position: relative;
+        margin-right: 0;
     }
 }
 
-.line-for-info li {
+.navigation-links li {
     margin-right: 5px;
     padding: 5px 10px;
 }
 
-.line-for-info li a {
+.navigation-links li a {
     color: rgb(95, 118, 115);
 }
 
-.line-for-info li a:hover {
+.navigation-links li a:hover {
     color: var(--main-color-first);
     border-bottom: 2px solid var(--main-color-first);
     line-height: 50%;
@@ -145,18 +155,15 @@
 
 .bar::before {
     top: -8px;
-    left: -2px; /* Adjust the value to move the line towards the left */
+    left: 0; /*Adjust the value to move the line towards the left */
 }
 
 .bar::after {
     bottom: -8px;
-    left: -2px; /* Adjust the value to move the line towards the left */
+    left: 0; /* Adjust the value to move the line towards the left */
 }
 
-
-
-
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .hamburger {
         display: block;
     }
