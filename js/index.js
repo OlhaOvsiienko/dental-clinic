@@ -1,5 +1,9 @@
-document.addEventListener('partialsLoaded', () => {
-    import('../js/footer.js');
-    import('../js/header.js');
-    import ('../js/index.book-visit.js');
+document.addEventListener('partials', () => {
+  import('./header-nav.js');
+  import('./header.js');
+  import('./index.testimonials-slider.js');
+  import('./services.js');
+  import('./index.book-visit.js');
+  import('./footer.js');
 });
+import './styles.css'; 

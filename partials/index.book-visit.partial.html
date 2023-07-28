@@ -2,20 +2,22 @@
   <div class="booking-form-field">
     <h2 class="container-title">Book a Visit Now!</h2>
     <div class="container-field">
-      <form action="https://formspree.io/f/mbjvjloy" method="post" class="booking-field">
+      <form action="partials/index.book-visit-confirmation.html" method="post" class="booking-field"
+        onsubmit="return validateForm()">
         <div class="container-field-name">
           <label for="name" class="container-field-label"></label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name*" class="container-field-input">
+          <input type="text" id="name" name="name" placeholder="Enter your full name*" class="container-field-input"
+            required>
         </div>
         <div class="container-field-phone">
           <label for="phone" class="container-field-label"></label>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{12}" placeholder="Enter your phone number*" required
-            class="container-field-input">
-          <small class="frame-small"></small>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number*" required
+            class="container-field-input" oninput="checkPhoneNumberFormat()">
+            <div id="errorMessage" style="display: none; color: red;" lang="en">Enter the number in 12 digit format (for example, 380505522111)</div>
         </div>
         <div class="container-field-dentist">
           <label for="dentist" class="container-field-label"></label>
-          <select id="dentist" name="dentist" class="container-field-input">
+          <select id="dentist" name="dentist" class="container-field-input" required>
             <option value="" disabled selected hidden class="container-input">Choose your dentist</option>
             <option value="emma-smith" class="container-input">Emma Smith</option>
             <option value="eliza-brown" class="container-input">Eliza Brown</option>
@@ -24,7 +26,7 @@
         </div>
         <div class="container-field-address">
           <label for="clinic" class="container-field-label"></label>
-          <select id="clinic" name="clinic" class="container-field-input">
+          <select id="clinic" name="clinic" class="container-field-input" required>
             <option value="" disabled selected hidden class="container-input">Select the clinic</option>
             <option value="ny" class="container-input">55 Lexington Ave, NY</option>
             <option value="la" class="container-input">100 S Main St, LA</option>
@@ -38,9 +40,11 @@
         <div class="container-field-button-send">
           <input type="submit" value="Send" class="button-send" id="sendButton">
         </div>
+
+        
+      </form>
+      <div id="errorMessage" style="display: none; color: red;">Fill in the form, please</div>
     </div>
-    </form>
-  </div>
   </div>
 </section>
 <section class="booking__description">
@@ -49,4 +53,4 @@
     <p class="booking__description-ensure-children">Ensure your children's oral health! Make an appointment.</p>
     <a href="#" class="booking__button">Shedule a Visit</a>
   </div>
-</section> 
+</section>
