@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -24,10 +24,11 @@
     --testimonials-background-color-katy: rgb(221, 234, 255);
     --testimonials-background-color-mark-jane: rgb(225, 227, 222);
     --testimonials-background-color-lucy: rgb(249, 236, 215);
-    --testimonials-svg-color-katy: #29498c;
+    --testimonials-svg-color-katy: rgb(41, 73, 140);
     --testimonials-svg-color-mark-jane: #1b4f49;
     --testimonials-svg-color-lucy: #ea7035;
     --tesimonials-item-text-color-katy: rgb(93, 120, 177);
+    --tesimonials-item-text-color-katy-junior: rgba(93,120,177,0.77);
     --tesimonials-item-text-color-mark-jane: rgb(119, 140, 137);
     --tesimonials-item-text-color-lucy: rgb(219, 153, 121);
     --text-font-family: 'Roboto', sans-serif;
