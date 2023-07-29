@@ -15,8 +15,9 @@
    background-color: white;
    display: grid;
    grid-column: 3;
-   padding: 10% 15% 10% 15%;
+   padding: 5% 10% 5% 10%;
    justify-items: stretch;
+   margin: none;
 }
 
 .form-title {
@@ -50,16 +51,20 @@
    padding: 12px 24px 12px 24px;
    width: 100%;
 }
-
-#errorMessageName {
-   color: red;
+.error-message {
+   color: var(--main-color-second);
+   border: 2px solid var(--main-color-second);
    font-size: 14px;
-   display: none;
- }
+   text-align: center;
+}
 
- #errorMessageName.active {
-   display: block;
- }
+#successMessageJS {
+   background-color: aquamarine;
+   color: blue;
+   padding: 10px;
+   display: none;
+   
+}
 
 .booking__description {
    background-color: var(--main-color-first);
