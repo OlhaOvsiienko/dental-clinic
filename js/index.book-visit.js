@@ -56,22 +56,26 @@ async function handleSubmit(event) {
   formData.append("clinic", clinic);
   formData.append("message", message);
 
+   
   const response = await fetch("https://formspree.io/f/mbjvjloy", {
     method: "POST",
     body: formData,
-  });
+    headers: {
+      'Accept': 'application/json'
+  },
+});
 
   if (response.ok) {
-    document.getElementById("bookingFormStatus").style.display = "block"; // Показать элемент
+    document.getElementById("bookingFormStatus").style.display = "block"; 
     document.getElementById("bookingFormStatus").innerHTML = "Спасибо за ваш запрос!";
     bookingForm.reset();
   } else {
-    document.getElementById("bookingFormStatus").style.display = "block"; // Показать элемент
+    document.getElementById("bookingFormStatus").style.display = "block"; 
     document.getElementById("bookingFormStatus").innerHTML = "Упс! Произошла ошибка при отправке формы";
   }
 }
 
 document.getElementById("sendButton").addEventListener("click", handleSubmit);
 
-bookingForm.addEventListener("submit", handleSubmit);
+bookingForm.addEventListener("submit", handleSubmit);  
 
