@@ -6,7 +6,6 @@ function validateForm() {
   const clinic = document.getElementById("clinic").value;
   const status = document.getElementById("bookingFormStatus");
 
-  
   if (name.trim() === "") {
     document.getElementById("errorMessageName").style.display = "block";
     return false;
@@ -22,60 +21,46 @@ function validateForm() {
     document.getElementById("errorMessageDentist").style.display = "block";
     return false;
   }
-    
+
   if (clinic === "") {
     document.getElementById("errorMessageClinic").style.display = "block";
     return false;
   }
 
-  // Если все проверки прошли успешно, скрываем сообщения об ошибках и отправляем данные на endpoint
   document.getElementById("errorMessageName").style.display = "none";
   document.getElementById("errorMessagePhone").style.display = "none";
   document.getElementById("errorMessageDentist").style.display = "none";
   document.getElementById("errorMessageClinic").style.display = "none";
-  return true; 
+  return true;
 }
 async function handleSubmit(event) {
   event.preventDefault();
- 
-  const isValid = validateForm(); 
+
+  const isValid = validateForm();
   if (!isValid) {
-    return; // Если форма не валидна, не отправляем данные
+    return; 
   }
 
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const dentist = document.getElementById("dentist").value;
-  const clinic = document.getElementById("clinic").value;
-  const message = document.getElementById("message").value;
-
-  const formData = new FormData();
-  formData.append("name", name);
-  formData.append("phone", phone);
-  formData.append("dentist", dentist);
-  formData.append("clinic", clinic);
-  formData.append("message", message);
-
-   
   const response = await fetch("https://formspree.io/f/mbjvjloy", {
     method: "POST",
-    body: formData,
+    body: new FormData(bookingForm),
     headers: {
-      'Accept': 'application/json'
-  },
-});
+      Accept: "application/json",
+    },
+  });
 
   if (response.ok) {
-    document.getElementById("bookingFormStatus").style.display = "block"; 
-    document.getElementById("bookingFormStatus").innerHTML = "Спасибо за ваш запрос!";
+    document.getElementById("bookingFormStatus").style.display = "block";
+    document.getElementById("bookingFormStatus").innerHTML =
+      "Congratulations! Your application is accepted!";
     bookingForm.reset();
   } else {
-    document.getElementById("bookingFormStatus").style.display = "block"; 
-    document.getElementById("bookingFormStatus").innerHTML = "Упс! Произошла ошибка при отправке формы";
+    document.getElementById("bookingFormStatus").style.display = "block";
+    document.getElementById("bookingFormStatus").innerHTML =
+      "Oops! An error occurred while submitting the form";
   }
 }
 
 document.getElementById("sendButton").addEventListener("click", handleSubmit);
 
-bookingForm.addEventListener("submit", handleSubmit);  
-
+bookingForm.addEventListener("submit", handleSubmit);
