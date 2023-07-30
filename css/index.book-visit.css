@@ -56,14 +56,14 @@
    border: 2px solid var(--main-color-second);
    font-size: 14px;
    text-align: center;
-}
+   margin-top: 5px;
+  }
 
-#successMessageJS {
+#bookingFormStatus {
    background-color: aquamarine;
    color: blue;
    padding: 10px;
-   display: none;
-   
+     
 }
 
 .booking__description {
