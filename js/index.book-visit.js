@@ -38,7 +38,7 @@ async function handleSubmit(event) {
 
   const isValid = validateForm();
   if (!isValid) {
-    return; 
+    return;
   }
 
   const response = await fetch("https://formspree.io/f/mbjvjloy", {

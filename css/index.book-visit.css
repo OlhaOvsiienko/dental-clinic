@@ -2,21 +2,25 @@
   background: url("../img/background-book-visit-new.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 0px;
   padding-top: 135px;
   padding-bottom: 135px;
+   
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
 }
 
 .form-field {
   border-radius: 34px;
   background-color: white;
   display: grid;
-  grid-column: 3;
+  grid-column: 2;
   padding: 5% 10% 5% 10%;
   justify-items: stretch;
-  margin: none;
+ 
 }
 
 .form-title {
@@ -37,19 +41,24 @@
   font-size: 14px;
   
 }
+.field-input:hover  {
+  background-color: rgb(221, 234, 255);
+  }
+ 
 input:focus, select:focus {
    background-color: #1b4f491f;
-  border-color: var(--main-color-second);
-}
+   outline: transparent;
+ }  
 
 .field-input::placeholder {
   color: var(--text-color-first);
 }
 
 .field-input.valid {
-   background-color: background-color: rgb(220 234 255);
+   background-color: rgb(220 234 255);
    border-color: transparent;
  }
+
 .button-send {
   background-color: var(--main-color-second);
   color: white;
@@ -81,27 +90,30 @@ input:focus, select:focus {
 
 .booking__description {
   background-color: var(--main-color-first);
-  display: flex;
-  flex: 1;
-  padding: 10px 15px 10px 15px;
+ 
+ }
+
+ .booking__description-inner {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // padding: 10px 5px 10px 5px;
   text-align: center;
   align-items: center;
-}
+  justify-content: center;
+ }
 
 @media (max-width: 768px) {
   .booking {
-    background: url("../img/background-book-visit-new.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex: 1;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 25px;
+    padding: 35px 10px 35px 10px;
+  }
+  
+  .inner {
+display: flex;
+flex-wrap: wrap;
   }
 
-  .booking__description {
-    display: grid;
+  .booking__description-inner {
     grid-template-columns: 1fr;
     text-align: center;
     justify-content: center;
