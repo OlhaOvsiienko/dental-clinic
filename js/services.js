@@ -63,25 +63,22 @@ const slides = [
     '  <button class="services__card-treatment--button" type="submit">Learn More</button>' +
     '</div>'
 ];
-  
 
 const carouselSlide = document.querySelector('.services__cards-carousel');
 
 let currentSlide = 0;
 
 function renderSlide() {
-    carouselSlide.innerHTML = slides[currentSlide];
-    if (window.innerWidth >= 768) {
+  carouselSlide.innerHTML = slides[currentSlide];
+  if (window.matchMedia("(min-width: 768px)").matches) {
       const secondSlideIdx = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
       carouselSlide.innerHTML += slides[secondSlideIdx];
-      if (window.innerWidth >= 1024) {
-        const thirdSlideIdx = secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
-        carouselSlide.innerHTML += slides[thirdSlideIdx];
+      if (window.matchMedia("(min-width: 1024px)").matches) {
+          const thirdSlideIdx = secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
+          carouselSlide.innerHTML += slides[thirdSlideIdx];
       }
-    }
   }
-
-renderSlide();
+}
 
 function nextSlide() {
     currentSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
