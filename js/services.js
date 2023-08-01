@@ -71,10 +71,10 @@ let currentSlide = 0;
 
 function renderSlide() {
   carouselSlide.innerHTML = slides[currentSlide];
-  if (window.innerWidth >= 768) {
+  if (window.matchMedia("(min-width: 768px)").matches) {
       const secondSlideIdx = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
       carouselSlide.innerHTML += slides[secondSlideIdx];
-      if (window.innerWidth >= 1024 ) {
+      if (window.matchMedia("(min-width: 1024px)").matches) {
           const thirdSlideIdx = secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
           carouselSlide.innerHTML += slides[thirdSlideIdx];
       }
