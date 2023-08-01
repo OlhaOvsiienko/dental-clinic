@@ -1,10 +1,15 @@
-const menu = document.querySelector('.navigation-links');
+const menu = document.querySelector('.mobile-menu');
 const menuIcon = document.querySelector('.hamburger');
 const menuIconItem = document.querySelector('.bar');
-menuIcon.addEventListener("click", showNaw);
+const menuContent = document.querySelector('.content-menu');
 
-function showNaw() {
+menuIcon.addEventListener("click", showMenu);
+
+function showMenu() { 
     menu.classList.toggle('active');
     menuIconItem.classList.toggle('active');
+    menuContent.classList.toggle('active');
 }
+
+
 
