@@ -63,7 +63,6 @@ const slides = [
     '  <button class="services__card-treatment--button" type="submit">Learn More</button>' +
     '</div>'
 ];
-  
 
 const carouselSlide = document.querySelector('.services__cards-carousel');
 
@@ -80,8 +79,6 @@ function renderSlide() {
       }
   }
 }
-
-renderSlide();
 
 function nextSlide() {
     currentSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
@@ -100,3 +97,7 @@ btnNext.addEventListener('click', nextSlide);
 btnPrev.addEventListener('click', prevSlide);
 
 window.addEventListener('resize', renderSlide);
+
+window.addEventListener("DOMContentLoaded", () => {
+  renderSlide()
+});
