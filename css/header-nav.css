@@ -96,16 +96,15 @@
 }
 
 .mobile-menu {
-    position: fixed;
-    transform: translateY(-150%);
+    display: none;
     z-index: 10;
 }
 
 .mobile-menu.active {
-    transform: translateY(0);
+    /* transform: translateY(0);
     position: relative;
-    transition: transform 0.5s;
-    
+    transition: transform 0.5s; */
+    display: block;
 }
 
 .desktop-menu {
@@ -139,6 +138,7 @@
 .logo-cursor {
     cursor: pointer;
     z-index: 20;
+    margin-left: 0;
 }
 
 
@@ -151,7 +151,7 @@
 }
 
 @media (min-width:992px) {
-    .mobile-menu {
+    .mobile-menu, .mobile-menu.active {
        display: none;
     }
 
