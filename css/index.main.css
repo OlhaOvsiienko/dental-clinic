@@ -1,8 +1,8 @@
-.main-part__container{
+.header-main-part__container{
     max-width: 1024px;
 }
 
-.main-part {
+.header-main-part {
     padding: 50px;
 }
 
@@ -26,9 +26,6 @@
     text-align: left;
 }
 
-.main-move .right-paragraph {
-    text-align: right;
-}
 
 .underline {
     color: rgb(95, 118, 115);
@@ -66,13 +63,23 @@ h1{
     color: var(--text-color-first);
 }
 
-
-
-.girl-with-teeth{
-    flex: 1;
+.header-item-box {
     display: flex;
-    
+    flex-direction: row;
 }
+
+.header-item-img {
+    width: 114px;
+}
+
+.number {
+    font-size: 48px;
+    color: var(--main-color-first);
+    font-weight: 500;
+    font-family: "Fredoka";
+    line-height: 57.6px;
+}
+
 
 @media (min-width: 768px) {
 
