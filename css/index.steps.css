@@ -89,3 +89,9 @@
     }
 
 }
+.steps__video-wrapper{
+    width: 100%;
+}
+.steps__video-wrapper img{
+    width: 100%;
+}
