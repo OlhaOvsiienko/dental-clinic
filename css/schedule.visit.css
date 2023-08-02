@@ -1,0 +1,179 @@
+
+.schedule-visit-container {
+    max-width: 1200px;
+    padding: 60px 30px 60px 30px;
+    border: 1px solid rgb(47, 0, 255);
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+.schedule-visit-container {
+    flex-direction: column; /* Элементы располагаются вертикально */
+  }
+  
+  .plan-visit,
+  .schedule-form-box {
+    width: 100%; /* Занимаем всю доступную ширину */
+    margin-bottom: 30px; /* Добавляем отступ между контейнерами */
+  }
+}
+
+
+
+.plan-visit,
+.schedule-form-box {
+  flex: 1; 
+  flex-grow: 1; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+.plan-visit {
+    border: 1px solid rgb(255, 102, 0);
+}
+
+.visit-title {
+    color: var(--main-color-first);
+    font-size: 12px;
+    text-align: left;
+    font-weight: 500;
+    
+}
+
+
+.visit-warning {
+    color: var(--main-color-second);
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: 20px;
+    text-align: left; 
+}
+.visit-plan__list-item {
+    color: var(--text-color-first);
+    list-style: none;
+    padding-bottom: 12px;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.visit-plan__list-item:last-child {
+    padding-bottom: 0;
+}
+
+.visit-plan__list-item::before {
+    content: "";
+    position: absolute;
+    background: url("../img/checkbox.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    margin-left: -30px;
+}
+
+
+.schedule-form-box {
+    border: 1px solid rgb(6, 98, 6);
+    position: relative;
+}
+
+.schedule-form-inner {
+    background-color: var(--services__card-treatment);
+    border-radius: 34px;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    border: 1px solid rgb(98, 6, 37);
+    justify-items: stretch;
+}
+
+@media (max-width: 768px) {
+.schedule-form-inner {
+    position: static; /* Отменяем абсолютное позиционирование */
+    border: none; /* Убираем границы */
+  }
+
+  .schedule-form {
+    margin: 0; /* Убираем отступы */
+  }
+
+  .field-input {
+    margin: 10px 0; /* Добавляем отступы между полями */
+  }
+
+  .field-button-send {
+    margin-top: 30px; /* Переносим кнопку ниже полей */
+  }
+}
+
+
+.schedule-form {
+    border: 1px solid rgb(98, 6, 37);
+    margin: 30px 50px 40px 50px
+}
+.field-input {
+    background-color: var(--services__card-treatment--line);
+    border-color: transparent;
+    border-radius: 34px;
+    margin: 30px 0px 0px 0px;
+    padding: 12px 24px 12px 24px;
+    width: 100%;
+    color: var(--services__card-treatment--button-hover);
+    font-size: 14px;
+}
+
+#message {
+    padding-bottom: 90px;
+}
+
+  .field-input:hover  {
+    border-color: var(--main-color-second);
+    }
+   
+  input:focus, select:focus {
+     background-color: #1b4f491f;
+     outline: transparent;
+   }  
+  
+  .field-input::placeholder {
+    color: var(--services__card-treatment--button-hover);
+  }
+  
+  .field-input.valid {
+     background-color: rgb(220 234 255);
+     border-color: transparent;
+   }
+  
+  .button-send {
+    background-color: var(--testimonials-svg-color-katy);
+    color: white;
+    border-radius: 34px;
+    margin: 56px 0px 0px 0px;
+    padding: 12px 24px 12px 24px;
+    width: 100%;
+  }
+  .field-button-send:hover button {
+     background-color: var(--services__card-treatment--button-hover);
+  }
+  
+  .error-message {
+    color: var(--main-color-second);
+    border: 2px solid var(--main-color-second);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  #bookingFormStatus {
+    color: var(--main-color-second);
+    border: 2px solid var(--main-color-second);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+  }
