@@ -21,6 +21,10 @@
     margin: 0;
 }
 
+.header-main-part{
+background-image: url(../img/header-background.png);
+}
+
 .header-main-part__container {
     background-color: #ebecea;
     padding: 40px 180px;
@@ -29,6 +33,7 @@
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
+    
 }
 
 .main-move {
