@@ -1,79 +1,77 @@
 .clinics {
-    padding: 60px 0px 30px 0px;
+  padding: 60px 0px 30px 0px;
 }
 
 .clinics__title {
-    color: var(--main-color-first);
-    font-size: 12px;
-    text-align: center;
-    display: block;
-    font-family: "Fredoka", sans-serif;
-    letter-spacing: 3px;
+  color: var(--main-color-first);
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  font-family: "Fredoka", sans-serif;
+  letter-spacing: 3px;
 }
 
 .clinics__subtitle {
-    color: var(--main-color-second);
-    font-size: 34px;
-    font-weight: 500;
-    text-align: center;
-    display: block;
-    margin-top: 20px;
-    font-family: "Fredoka", sans-serif;
+  color: var(--main-color-second);
+  font-size: 34px;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  font-family: "Fredoka", sans-serif;
 }
 
 .clinics__description {
-    font-family: var(--text-font-family);
-    color: var(--text-color-second);
-    font-size: 19px;
-    font-weight: 500;
-    margin-top: 25px;
-    margin-bottom: 45px;
-    text-align: center;
-    display: block;
+  font-family: var(--text-font-family);
+  color: var(--text-color-second);
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  text-align: center;
+  display: block;
 }
 
 .clinics-inner {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    max-width: 1200px;
-    gap: 20px;
-    margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  gap: 40px;
+  margin-bottom: 80px;
 }
 
 .clinics_card-booking {
-    border-radius: 34px;
-    background-color: var(--testimonials-background-color-lucy);
-    
+  border-radius: 34px;
+  background-color: var(--testimonials-background-color-lucy);
 }
 
 .clinics_card-photo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-   margin-left: 40px;
-   margin-top: 40px;
-   margin-bottom: 40px;
-    overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  overflow: hidden;
 }
 
 .clinic-booking-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .clinics_card-title {
-    color: var(--main-color-first);
-    padding-left: 40px;
-    font-size: 24px;
+  color: var(--main-color-first);
+  padding-left: 40px;
+  font-size: 24px;
 }
 
 .clinics_card-line,
 .clinics_card-text {
-    color: var(--tesimonials-item-text-color-lucy);
-    padding-left: 40px;
-    padding-right: 40px;
+  color: var(--tesimonials-item-text-color-lucy);
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .clinics_card-button {
@@ -90,8 +88,45 @@
   margin-top: 60px;
   margin-bottom: 60px;
   border-color: transparent;
-
 }
 .clinics_card-button:hover {
-   background-color: var(--main-color-second);
+  background-color: var(--main-color-second);
 }
+
+.card-ny {
+  border: 1px solid red;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.map-ny {
+  height: 200px;
+}
+
+.map-ny-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ny-tel,
+.ny-email {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid yellow;
+}
+
+.icon-frame {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border: 1px solid green;
+}
+
+.schedule-icon {
+  
+  }
