@@ -109,6 +109,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    position: relative;
   }
 
   .services__cards-carousel {
@@ -182,7 +183,9 @@
     cursor: pointer;
     font-family: var(--text-font-family);
     font-size: 14px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 43.3125px;
     width: 119.812px;
     margin-left: 35px;
@@ -191,6 +194,7 @@
 
   .services__card-restorative--button:hover {
     background-color: var(--services__card-restorative--button-hover);
+    text-decoration: none;
   }
   
   .services__card-preventive {
@@ -261,7 +265,9 @@
     cursor: pointer;
     font-family: var(--text-font-family);
     font-size: 14px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 43.3125px;
     width: 119.812px;
     margin-left: 35px;
@@ -270,6 +276,7 @@
 
   .services__card-preventive--button:hover {
     background-color: var(--services__card-preventive--button-hover);
+    text-decoration: none;
   }
 
   .services__card-treatment {
@@ -340,7 +347,9 @@
     cursor: pointer;
     font-family: var(--text-font-family);
     font-size: 14px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 43.3125px;
     width: 119.812px;
     margin-left: 35px;
@@ -349,6 +358,7 @@
 
   .services__card-treatment--button:hover {
     background-color: var(--services__card-treatment--button-hover);
+    text-decoration: none;
   }
 
   .carousel-btn__services-prev {
@@ -359,6 +369,8 @@
     background-color: var( --main-color-second);
     color: var(--services__card--button-color);
     border: 0;
+    position: absolute;
+    left: -2%;
   }
 
   .carousel-btn__services-next {
@@ -369,6 +381,20 @@
     background-color: var( --main-color-second);
     color: var(--services__card--button-color);
     border: 0;
+    position: absolute;
+    left: 85%;
+  }
+
+  @media (min-width:768px)
+  { .carousel-btn__services-next {
+      left: 93%
+  }
+  }
+
+  @media (min-width:1024px)
+  { .carousel-btn__services-next {
+      left: 95%
+  }
   }
 
 
