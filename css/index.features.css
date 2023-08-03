@@ -144,3 +144,23 @@
         margin-top: 40px;
     }
 }
+@media (min-width: 991px) {
+    .features__title {
+        font-size: 44px;
+    }
+    .features {
+        padding: 67px 40px 0 40px;
+    }
+    .side-block__availability-list, .side-blocks__note {
+        font-size: 15px;
+    }
+    .side-block__item {
+        padding-top: 39px;
+    }
+}
+@media (min-width: 1157px) {
+    .side-block__item {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
