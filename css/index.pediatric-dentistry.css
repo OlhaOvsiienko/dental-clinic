@@ -1,0 +1,228 @@
+.pediatric-dentistry {
+    min-width: 320px;
+}
+
+.pediatric-dentistry__wrapper {
+    color: var(--main-color-second);
+    font-family: var(--text-font-family);
+    flex-basis: 100%;
+    background-color: var(--services__card-preventive);
+    text-align: center;
+    padding: 60px 24px 60px 24px;
+    justify-content: center;
+}
+
+.pediatric-dentistry__wrapper--title {
+    color: var(--main-color-second);
+    font-size: 34px;
+    font-stretch: 100%;
+    font-weight: 500px;
+    line-height: 40.8px;
+    margin: 0;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.pediatric-dentistry__wrapper--text {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0 0 0; 
+}
+
+.pediatric-dentistry__wrapper--text-subtitle {
+    color: var(--pediatric-dentistry__wrapper--text-subtitle);
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    font-weight: 700px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+}
+
+.pediatric-dentistry__wrapper--text-title {
+    color: var(--text-color-second);
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    font-weight: 700px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration-color: var(--text-color-second);
+    text-decoration-line: underline;
+    margin: 0;
+}
+
+.pediatric-dentistry__text {
+    padding: 85px 24px 0 24px;
+    color: var(--tesimonials-item-text-color-mark-jane);
+    display: flex;
+    font-size: 17px;
+    font-weight: 400px;
+    line-height: 26.52px;
+}
+
+.pediatric-dentistry__card-dental-emergencies {
+    width: 272px;
+    background-color: var(--services__card-treatment);
+}
+
+.pediatric-dentistry__card-dental-emergencies--img {
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pediatric-dentistry__card-dental-emergencies--content {
+    padding: 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pediatric-dentistry__card-dental-emergencies--title {
+    color: var(--testimonials-svg-color-katy);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36.4px;
+}
+
+.pediatric-dentistry__card-dental-emergencies--line {
+    background-color: rgba(135, 177, 223, 1);
+    height: 3px;
+    width: 18.6px;
+    text-align: left;
+    margin: 0;
+}
+
+.pediatric-dentistry__card-dental-emergencies--text {
+    color: var(--tesimonials-item-text-color-katy);
+    font-family: var(--text-font-family);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26.52px;
+    margin-top: 10px;
+}
+
+.pediatric-dentistry__card-dental-emergencies--list-item {
+    color:  rgb(88, 137, 194);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    font-family: var(--text-font-family);
+}
+
+.pediatric-dentistry__card-dental-emergencies--button-lm {
+    background-color: var(--services__card-treatment--button-background);
+    color: var(--services__card--button-color);
+    border-radius: 34px;
+    cursor: pointer;
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43.3125px;
+    width: 119.812px;
+    margin: 0;
+    border-color: var(--services__card-border-color);
+}
+
+.pediatric-dentistry__card-dental-emergencies--button-visit {
+    background-color: var(--main-color-first);
+    color: var(--services__card--button-color);
+    border-radius: 34px;
+    cursor: pointer;
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43.3125px;
+    width: 119.812px;
+    border-color: var(--services__card-border-color);
+    margin: 20px 0 0 0;
+}
+
+.pediatric-dentistry__card-oral-examination {
+    width: 272px;
+    background-color: rgba(225, 227, 222, 1);
+    margin-top: 30px;
+}
+
+.pediatric-dentistry__card-oral-examination--img {
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pediatric-dentistry__card-oral-examination--content {
+    padding: 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pediatric-dentistry__card-oral-examination--title {
+    color: var(--main-color-second);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36.4px;
+}
+
+.pediatric-dentistry__card-oral-examination--line {
+    background-color:rgb(193 203 198);
+    height: 3px;
+    width: 18.6px;
+    text-align: left;
+    margin: 0;
+}
+
+.pediatric-dentistry__card-oral-examination--text {
+    color: rgba(116, 135, 132, 1);
+    font-family: var(--text-font-family);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26.52px;
+    margin-top: 10px;
+}
+
+.pediatric-dentistry__card-oral-examination--list-item {
+    color: var(--text-color-first);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    font-family: var(--text-font-family);
+}
+
+.pediatric-dentistry__card-oral-examination--button-lm {
+    background-color: var(--main-color-second);
+    color: var(--services__card--button-color);
+    border-radius: 34px;
+    cursor: pointer;
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43.3125px;
+    width: 119.812px;
+    margin: 0;
+    border-color: var(--services__card-border-color);
+}
+
+.pediatric-dentistry__card-oral-examination--button-visit {
+    background-color: var(--main-color-first);
+    color: var(--services__card--button-color);
+    border-radius: 34px;
+    cursor: pointer;
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43.3125px;
+    width: 119.812px;
+    border-color: var(--services__card-border-color);
+    margin: 20px 0 0 0;
+}

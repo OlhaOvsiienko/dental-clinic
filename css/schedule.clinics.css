@@ -8,17 +8,13 @@
   text-align: center;
   display: block;
   font-family: "Fredoka", sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 .clinics__subtitle {
-  color: var(--main-color-second);
-  font-size: 34px;
-  font-weight: 500;
   text-align: center;
   display: block;
   margin-top: 20px;
-  font-family: "Fredoka", sans-serif;
 }
 
 .clinics__description {
@@ -38,6 +34,8 @@
   max-width: 1200px;
   gap: 40px;
   margin-bottom: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .clinics_card-booking {
@@ -129,4 +127,25 @@
 
 .schedule-icon {
   
+  }
+
+  .schedule-photo {
+    padding: 65px 30px 65px 30px;
+    max-width: 1200px;
+    display:flex;
+    border: 1px solid orange;
+  }
+
+  .schedule-photo-frame {
+border-radius: 34px;
+border: 1px solid rgb(0, 255, 76);
+width: 100%; /* Занимает 100% ширины родительского контейнера */
+  border-radius: 34px; /* Добавляет закругленные углы (border radius) на 34 пикселя */
+  overflow: hidden;
+  }
+
+  .schedule-photo-img {
+    width: 100%; /* Занимает 100% ширины контейнера */
+  height: auto; /* Автоматически вычисляет высоту, чтобы сохранить пропорции */
+  display: block;
   }
