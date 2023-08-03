@@ -1,15 +1,13 @@
-const menu = document.querySelector('.mobile-menu');
-const menuIcon = document.querySelector('.hamburger');
-const menuIconItem = document.querySelector('.bar');
+const mobileMenu = document.querySelector('.mobile-menu');
+const menuBtn = document.querySelector('.menu-btn');
 const menuContent = document.querySelector('.content-menu');
-menuIcon.addEventListener("click", showMenu);
+const bodyLock = document.querySelector('body');
+menuBtn.addEventListener("click", showMenu);
 
-function showMenu() { 
-    menu.classList.toggle('active');
-    menuIconItem.classList.toggle('active');
-    menuContent.classList.toggle('active');
-    
+function showMenu() {
+mobileMenu.classList.toggle('active');
+menuBtn.classList.toggle('active');
+menuContent.classList.toggle('active');
+bodyLock.classList.toggle('lock');
 }
-
-
 
