@@ -29,21 +29,3 @@ for (let i = 1; i <= 6; i++) {
   });
 }
 
-/*document.getElementById("chevron-icon-1").addEventListener("click", function() {
-  toggleText(1);
-});
-document.getElementById("chevron-icon-2").addEventListener("click", function() {
-  toggleText(2);
-});
-document.getElementById("chevron-icon-3").addEventListener("click", function() {
-  toggleText(3);
-});
-document.getElementById("chevron-icon-4").addEventListener("click", function() {
-  toggleText(4);
-});
-document.getElementById("chevron-icon-5").addEventListener("click", function() {
-  toggleText(5);
-});
-document.getElementById("chevron-icon-6").addEventListener("click", function() {
-  toggleText(6);
-});*/
