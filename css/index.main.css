@@ -15,14 +15,37 @@
     .desctop {
         display: block;
     }
+
+    
 }
 
 .main-content {
     margin: 0;
 }
 
-.header-main-part{
-background-image: url(../img/header-background.png);
+.header-main-part__container {
+    background-image: url(../img/header-background.png);
+    background-position: 63% 53%;
+
+}
+
+.header-arrow {
+    width: 46px;
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 400px;
+
+}
+
+@media (min-width: 768px) {
+
+    .header-arrow {
+        width: 46px;
+        position: absolute;
+        margin-left: 250px;
+        margin-top: 100px;
+
+    }
 }
 
 .header-main-part__container {
@@ -33,7 +56,7 @@ background-image: url(../img/header-background.png);
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
-    
+
 }
 
 .main-move {
@@ -89,7 +112,7 @@ h1 {
     color: var(--text-color-first);
     font-family: "Fredoka";
     margin-top: 32px;
-    
+
 }
 
 .header-item {
@@ -105,6 +128,7 @@ h1 {
 .main-mobile-header-img-box {
     margin-top: 50px;
 }
+
 .header-item-box-mobile {
     display: flex;
     flex-direction: row;
@@ -190,8 +214,15 @@ a:hover {
     .main-desctop-header-img {
         width: 894px;
         margin-left: 60px;
-        
-}
+    }
+
+    .header-arrow {
+        width: 84px;
+        position: absolute;
+        margin-left: 340px;
+        margin-top: 110px;
+
+    }
 }
 
 
@@ -246,7 +277,7 @@ a:hover {
         grid-template-columns: 40% 60%;
         margin-left: 0;
         padding: 60px 20px 0;
-        
+
     }
 
     .main-content-text {
@@ -259,11 +290,11 @@ a:hover {
         margin-top: 60px;
     }
 
-    .header-item:first-child{
+    .header-item:first-child {
         margin-right: 30px;
     }
 
-    .header-item:last-child{
+    .header-item:last-child {
         margin-right: 30px;
     }
 
@@ -271,18 +302,15 @@ a:hover {
         margin-left: 0;
     }
 
-    
+
 
     .main-move {
         display: flex;
         flex-direction: row;
         padding: 65px 15px 0;
-        
+
     }
 
-    .main-content {
-        
-    }
 
     .offers {
         padding: 0;
@@ -306,5 +334,6 @@ a:hover {
     .text {
         margin-left: 0;
     }
+
 
 }
