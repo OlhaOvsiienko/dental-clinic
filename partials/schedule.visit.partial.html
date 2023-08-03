@@ -20,22 +20,21 @@
   <div class="schedule-form-inner">
     <form id="scheduleForm" class="schedule-form">
         <div class="field-name">
-          <input type="text" id="name" name="name" placeholder="Your name*" class="field-input"/>
+          <input type="text" id="nameSchedule" name="name" placeholder="Your name*" class="field-input"/>
           <div id="errorMessageName" style="display: none"; class="error-message">Fill in this field, please</div>
         </div>
         <div class="field-phone">
-          <input type="tel" id="phone" name="phone" placeholder="Phone number*" class="field-input"/>
+          <input type="tel" id="phoneSchedule" name="phone" placeholder="Phone number*" class="field-input"/>
           <div id="errorMessagePhone" style="display: none"; class="error-message">Enter the number in 12 digit format (for example, 380505522111)</div>
         </div>
         <div class="field-email">
-            <input type="email" id="email" name="email" placeholder="Email*" class="field-input"/>
-            <div id="errorMessageEmail" style="display: none"; class="error-message">Fill in this field, please</div>
+            <input type="email" id="email" name="email" placeholder="Email" class="field-input"/>
         </div>
         <div class="field-message">
             <input type="text" id="message" name="message" placeholder="Your message" class="field-input"/>
         </div>
         <div class="field-button-send">
-            <button type="submit" value="Send" class="button-send" id="sendButton">Send</button>
+            <button type="submit" value="Send" class="button-send" id="sendScheduleButton">Send</button>
         </div>
     </form>
     <div id="scheduleFormStatus" style="display: none"></div>
