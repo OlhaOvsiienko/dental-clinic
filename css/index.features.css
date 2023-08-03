@@ -112,3 +112,35 @@
     color: var(--tesimonials-item-text-color-katy-junior);
     font-weight: bold;
 }
+
+@media (min-width: 768px) {
+    .features__title {
+        font-size: 39px;
+        margin-top: 20px;
+    }
+    .features {
+        padding: 65px 32px 0 32px;
+    }
+    .features__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 70px;
+    }
+    .features-items-container {
+        margin-bottom: 0;
+    }
+    .side-block__item {
+        border-radius: 30px;
+        padding: 65px 29px 34px 29px;
+    }
+    .blocks__image-container, .blocks__image-container-grow-up, .blocks__image-container-smiling-baby {
+        height: 70px;
+        width: 70px;
+    }
+    .item-icon {
+        width: 40px;
+    }
+    .side-blocks__note {
+        margin-top: 40px;
+    }
+}
