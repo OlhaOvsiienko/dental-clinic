@@ -5,5 +5,4 @@ document.addEventListener('partialsLoaded', () => {
   import('./services.js');
   import('./index.book-visit.js');
   import('./footer.js')
-  import('./index.testimonials-slider.js');
 });
