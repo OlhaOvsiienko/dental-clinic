@@ -1,61 +1,49 @@
-function viewDiv(){
-    document.getElementById("textTermsConditions").style.display = "block";
-  };
-  
-  
-  
+const conditionsItems = document.querySelectorAll('.conditions-item');
 
+for (let i = 0; i < conditionsItems.length; i++) {
+  const itemId = i + 1;
+  const chevronIcon = document.getElementById('chevron-icon-' + itemId);
 
-/*document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("toggleIconChevronDown").addEventListener("click", function() {
-      const textContainer = document.getElementById("textTermsConditions");
-      const toggleIconDown = document.getElementById("toggleIconChevronDown");
-      const toggleIconUp = document.getElementById("toggleIconChevronUp");
+  chevronIcon.addEventListener("click", function() {
+    toggleText(itemId);
+  });
+}
 
-      if (textContainer.style.display === "none") {
-        // Если текст скрыт, показываем его и меняем иконки
-        textContainer.style.display = "block";
-        toggleIconDown.style.display = "none";
-        toggleIconUp.style.display = "inline";
-      } else {
-        // Если текст видим, скрываем его и меняем иконки
-        textContainer.style.display = "none";
-        toggleIconDown.style.display = "inline";
-        toggleIconUp.style.display = "none";
-      }
-    });
+function toggleText(itemId) {
+  const textElement = document.getElementById('textConditionsItem' + itemId);
+  const chevronIcon = document.getElementById('chevron-icon-' + itemId);
+  const computedStyle = window.getComputedStyle(textElement);
 
-    document.getElementById("toggleIconChevronUp").addEventListener("click", function() {
-        const textContainer = document.getElementById("textTermsConditions");
-        const toggleIconDown = document.getElementById("toggleIconChevronDown");
-        const toggleIconUp = document.getElementById("toggleIconChevronUp");
-
-      // Скрываем текст и меняем иконки
-      textContainer.style.display = "none";
-      toggleIconDown.style.display = "inline";
-      toggleIconUp.style.display = "none";
-    });
-  }); */
-  /*function toggleText() {
-    var textContainer = document.getElementById("textTermsConditions");
-    var toggleIconDown = document.getElementById("toggleIconChevronDown");
-    var toggleIconUp = document.getElementById("toggleIconChevronUp");
-  
-    if (textContainer.style.display === "none") {
-      
-      textContainer.style.display = "block";
-      toggleIconDown.style.display = "none";
-      toggleIconUp.style.display = "inline";
-    } else {
-      
-      textContainer.style.display = "none";
-      toggleIconDown.style.display = "inline";
-      toggleIconUp.style.display = "none";
-    }
+  if (computedStyle.display === 'none') {
+    textElement.style.display = 'block';
+    chevronIcon.style.transform = 'rotate(180deg)';
+  } else {
+    textElement.style.display = 'none';
+    chevronIcon.style.transform = 'rotate(0deg)';
   }
-  
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("toggleIconChevronDown").addEventListener("click", toggleText);
-    document.getElementById("toggleIconChevronUp").addEventListener("click", toggleText);
-  });*/
+}
+
+for (let i = 1; i <= 6; i++) {
+  document.getElementById("chevron-icon-" + i).addEventListener("click", function() {
+    toggleText(i);
+  });
+}
+
+/*document.getElementById("chevron-icon-1").addEventListener("click", function() {
+  toggleText(1);
+});
+document.getElementById("chevron-icon-2").addEventListener("click", function() {
+  toggleText(2);
+});
+document.getElementById("chevron-icon-3").addEventListener("click", function() {
+  toggleText(3);
+});
+document.getElementById("chevron-icon-4").addEventListener("click", function() {
+  toggleText(4);
+});
+document.getElementById("chevron-icon-5").addEventListener("click", function() {
+  toggleText(5);
+});
+document.getElementById("chevron-icon-6").addEventListener("click", function() {
+  toggleText(6);
+});*/
