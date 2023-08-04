@@ -16,6 +16,9 @@
     margin-top: 25px;
     line-height: 24.7px;
 }
+.features__item-friendly-tooth, .features__item-grow-up, .features__item-smiling-baby, .features__item-tooth-location {
+    margin-bottom: 23px;
+}
 .features__content {
     margin-top: 45px;
 }
@@ -71,7 +74,7 @@
 }
 .blocks__description {
     color: var(--text-color-first);
-    margin-bottom: 23px;
+    margin-bottom: 0;
 }
 .features-items-container {
     margin-bottom: 63px;
@@ -121,6 +124,9 @@
     .features {
         padding: 65px 32px 0 32px;
     }
+    .features__item-grow-up, .features__item-tooth-location {
+        margin-bottom: 0;
+    }
     .features__content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -162,5 +168,17 @@
     .side-block__item {
         padding-left: 35px;
         padding-right: 35px;
+    }
+}
+@media (min-width: 1280px) {
+    .features {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .side-block__item {
+        padding-top: 60px;
+    }
+    .features__content {
+        gap: 60px;
     }
 }
