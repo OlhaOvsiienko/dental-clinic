@@ -7,9 +7,7 @@
 </section>
 
 <section class="clinics-inner">
-  <!--<div id="content">
-        <object type="text/html" data="partials/schedule.clinics.partial.html"></object>
-  </div>-->
+  
   <div class="clinics_card-booking">
     <div class="clinics_card-photo">
       <img
@@ -26,80 +24,78 @@
     </p>
 
     <button class="clinics_card-button" type="submit" onclick="togglePartial()">Book a Visit</button>
-  
-     
   </div>
 
-  <div class="card-ny">
-    <div class="map-ny">
-      <img
-        class="map-ny-img"
-        src="img/schedule-clinic-booking.jpg"
-        alt="A smiling girl"
-      />
+<!-- NY-card-->
+
+  <div class="card-clinic">
+    <div class="map-clinic">
+      <iframe class="map-clinic-img" alt="NY clinic's locatiion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9901420310603!2d-73.98608732439084!3d40.74024243588683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a0ab7d89eb%3A0xbf87ad431830f203!2zNTUgTGV4aW5ndG9uIEF2ZSwgTmV3IFlvcmssIE5ZIDEwMDEwLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1691141288325!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-    <h3 class="title-ny">Working Hours</h3>
-    <p class="line-ny">_______</p>
-    <p class="text-ny">Monday – Thursday: 8 am – 6 pm</p>
-    <p class="text-ny">Friday: 8 am – 4 pm</p>
-    <p class="text-ny">Saturday: 10 am – 4 pm</p>
-    <div class="ny-tel">
-      <div class="icon-frame">
-        <svg   xmlns="http://www.w3.org/2000/svg" class="schedule-icon">
-          <path
-            d="M90.1,75.1l-0.5-1c-1.4-3.3-18.6-8.3-20-8.4l-1.1,0.1c-2.1,0.4-4.4,2.3-8.9,6.2c-0.9,0.8-2.1,1-3.2,0.4  c-5.9-3.3-13.1-9.9-16.7-13.9c-3.9-4.3-8.6-11.4-10.8-17.1c-0.4-1.1,0-2.3,0.8-3.1c5.1-4.6,7.3-6.8,7.5-9.2c0.1-1.4-2.9-19.1-6-20.8  l-0.9-0.6c-2-1.3-5-3.2-8.3-2.5c-0.8,0.2-1.6,0.5-2.3,0.9C17.5,7.5,12,11.3,9.5,16.2C8,19.3,7.3,47.4,28.3,71.1  c20.8,23.5,46.5,24.5,50.3,23.7l0.1,0l0.3-0.1c5.2-1.9,9.6-6.8,11.3-8.9C93.4,82.1,91.3,77.6,90.1,75.1z" style="" fill="rgb(41, 73, 140)"
-          />
+    <h3 class="clinic-title">Working Hours</h3>
+    <p class="clinic-line">_______</p>
+    <p class="clinic-schedule-text">Monday – Thursday: 8 am – 6 pm</p>
+    <p class="clinic-schedule-text">Friday: 8 am – 4 pm</p>
+    <p class="clinic-schedule-text">Saturday: 10 am – 4 pm</p>
+    
+    <div class="clinic-phone">
+      <div class="shedule-clinic-icon-container">
+        <svg   xmlns="http://www.w3.org/2000/svg" fill="rgb(40, 73, 140)" class="schedule-icon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
         </svg>
       </div>
-      <div>
-        <p class="card-text-ny">+1 (234) 56 78 90</p>
+      <div class="clinic-phone-container">
+        <p class="clinic-phone-number">+1 (234) 56 78 90</p>
+      </div>
+    </div>
+
+    <div class="clinic-email">
+      <div class="shedule-clinic-icon-container">
+        <svg   xmlns="http://www.w3.org/2000/svg" fill="rgb(40, 73, 140)" class="schedule-icon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+        </svg>
+      </div>
+      <div class="clinic-email-container">
+        <p class="clinic-email-item">sullivan.heights_ny@email.com</p>
+      </div>
+    </div>
+  </div>
+
+<!-- LA-card-->
+  <div class="card-clinic">
+    <div class="map-clinic">
+      <iframe class="map-clinic-img" alt="LA clinic's locatiion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7025720770407!2d-118.24594349396352!3d34.05149986729458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c648d9808fbd%3A0xb79dfbc6ae338c12!2zMTAwIFMgTWFpbiBTdCwgTG9zIEFuZ2VsZXMsIENBIDkwMDEyLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1691142017900!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <h3 class="clinic-title">Working Hours</h3>
+    <p class="clinic-line">_______</p>
+    <p class="clinic-schedule-text">Monday – Thursday: 8 am – 6 pm</p>
+    <p class="clinic-schedule-text">Friday: 8 am – 4 pm</p>
+    <p class="clinic-schedule-text">Saturday: 10 am – 4 pm</p>
+    
+    <div class="clinic-phone">
+      <div class="shedule-clinic-icon-container">
+        <svg   xmlns="http://www.w3.org/2000/svg" fill="rgb(40, 73, 140)" class="schedule-icon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+        </svg>
+      </div>
+      <div class="clinic-phone-container">
+        <p class="clinic-phone-number">+1 (234) 56 78 91</p>
       </div>
     </div>
     
-    <div class="ny-email">
-      <div class="icon-frame">
-        <svg xmlns="http://www.w3.org/2000/svg" class="schedule-icon">
-          <path
-            d="M43.1,6.9H4.9c-0.3,0-0.5,0.4-0.3,0.7l19.1,19.1c0.2,0.2,0.4,0.2,0.6,0L43.4,7.6C43.7,7.3,43.5,6.9,43.1,6.9z"
-            style="" fill="rgb(41, 73, 140)"
-          ></path>
-          <path
-            d="M1.2,36.7L13.9,24c0.2-0.2,0.2-0.4,0-0.6L1.2,10.8c-0.2-0.2-0.7-0.1-0.7,0.3v25.4C0.5,36.8,0.9,37,1.2,36.7z"
-            style="" fill="rgb(41, 73, 140)"
-          ></path>
-          <path
-            d="M30.8,27.4c-0.2-0.2-0.4-0.2-0.6,0L25.7,32c-0.5,0.5-1.1,0.7-1.7,0.7s-1.2-0.2-1.7-0.7l-4.6-4.6c-0.2-0.2-0.4-0.2-0.6,0   L4.1,40.4c-0.2,0.2-0.1,0.7,0.3,0.7h39.2c0.3,0,0.5-0.4,0.3-0.7L30.8,27.4z"
-            style="" fill="rgb(41, 73, 140)"
-          ></path>
-          <path
-            d="M46.8,10.8L34.1,23.5c-0.2,0.2-0.2,0.4,0,0.6l12.7,12.7c0.2,0.2,0.7,0.1,0.7-0.3V11.1C47.5,10.7,47.1,10.6,46.8,10.8z"
-            style="" fill="rgb(41, 73, 140)"
-          ></path>
+    <div class="clinic-email">
+      <div class="shedule-clinic-icon-container">
+        <svg   xmlns="http://www.w3.org/2000/svg" fill="rgb(40, 73, 140)" class="schedule-icon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
         </svg>
       </div>
-      <div>
-        <p class="card-text-ny">sullivan.heights_ny@email.com</p>
+      <div class="clinic-email-container">
+        <p class="clinic-email-item">sullivan.heights_la@email.com</p>
       </div>
     </div>
-  </div>
 
-  <div class="clinics_card-booking">
-    <div class="clinics_card-photo">
-      <img
-        class="clinic-booking-img"
-        src="img/schedule-clinic-booking.jpg"
-        alt="A smiling girl"
-      />
-    </div>
-
-    <h3 class="clinics_card-title">Timely Dental Care</h3>
-    <p class="clinics_card-line">_______</p>
-    <p class="clinics_card-text">
-      Teach your child about oral health from an early age.
-    </p>
-    <div class=""></div>
-    <button class="clinics_card-button" type="submit">Book a Visit</button>
   </div>
 </section>
 
