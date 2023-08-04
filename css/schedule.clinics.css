@@ -1,6 +1,17 @@
 .clinics {
   padding: 60px 0px 10px 0px;
-  border: 1px solid red;
+}
+
+@media (max-width: 768px) {
+  .clinics {
+    padding: 60px 10px 10px 10px;
+  }
+  .clinic-email-item {
+    font-size: 15px;
+  }
+  .clinics_card-booking {
+    width: 100%;
+  }
 }
 
 .clinics__title {
@@ -37,14 +48,19 @@
   margin-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  border: 1px solid green;
+}
+
+@media (max-width: 768px) {
+  .clinics-inner {
+  flex-direction: column;
+  }
 }
 
 .clinics_card-booking {
   border-radius: 34px;
   background-color: var(--testimonials-background-color-lucy);
   flex: 1;
-  border: 1px solid rgb(134, 227, 255);
+  padding-bottom: 30px;
 }
 
 .clinics_card-photo {
@@ -76,33 +92,34 @@
   padding-right: 40px;
 }
 
+.clinics_card-text {
+  padding-bottom: 40px;
+}
+
 .clinics_card-button {
-  color: white;
+  color: var(--services__card--button-color);
   font-size: 14px;
   border-radius: 34px;
   background-color: var(--main-color-first);
-  padding: 12px 24px 12px 24px;
   font-weight: bold;
-  display: grid;
+  padding: 12px 24px 12px 24px;
   place-items: center;
   margin-left: 40px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  border-color: transparent;
+  
 }
+
 .clinics_card-button:hover {
   background-color: var(--main-color-second);
 }
 
 .card-clinic {
-  border: 1px solid red;
   flex: 1;
+  width: 100%;
 }
 
 .map-clinic {
   height: 200px;
   margin-bottom: 30px;
-  border: 1px solid rgb(0, 42, 255);
 }
 
 .map-clinic-img {
@@ -140,14 +157,11 @@
   width: 100%;
   margin-top: 30px;
   margin-bottom: 0px;
-  
-  border: 1px solid yellow;
 }
 
 .clinic-phone-container,
 .clinic-email-container {
   text-align: left;
-  border: 1px solid rgb(23, 23, 22);
   width: 100%;
   margin-left: 10px;
 }
@@ -157,10 +171,8 @@
 .shedule-clinic-icon-container {
   width: 25px; 
   height: 25px; 
-  border: 2px solid rgb(229, 35, 13);
   display: flex; 
   margin: 0px;
-  
 }
 
 .schedule-icon {
@@ -170,19 +182,22 @@
   max-height: 100%;
 }
 
-
 /*Big Photo*/
 
 .schedule-photo {
-  padding: 65px 30px 65px 30px;
+  padding: 60px 30px 60px 30px;
   max-width: 1200px;
   display:flex;
-  border: 1px solid orange;
+}
+
+@media (max-width: 768px) {
+  .schedule-photo {
+    padding: 30px 30px 30px 30px;
+}
 }
 
 .schedule-photo-frame {
   border-radius: 34px;
-  border: 1px solid rgb(0, 255, 76);
   width: 100%; 
   border-radius: 34px; 
   overflow: hidden;
