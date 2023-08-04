@@ -6,7 +6,7 @@
     color: var(--main-color-second);
     font-family: var(--text-font-family);
     flex-basis: 100%;
-    background-color: var(--services__card-preventive);
+    background-color: var(--pediatric-dentistry__wrapper);
     text-align: center;
     padding: 60px 24px 60px 24px;
     justify-content: center;
@@ -65,8 +65,6 @@
 
 .pediatric-dentistry__card {
     min-width: 272px;
-    margin-right: 20px;
-    margin-left: 20px;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -75,7 +73,14 @@
 
 @media (min-width:768px)
     { .pediatric-dentistry__card {
-        flex-direction: row;               
+        flex-direction: row;            
+    }
+    }
+
+    @media (max-width:1220px)
+    { .pediatric-dentistry__card {
+        margin-left: 20px;
+        margin-right: 20px;             
     }
     }
 
@@ -86,6 +91,8 @@
     width: -webkit-fill-available; 
     object-fit: cover;
     width: 100%;
+    max-width: 585px;
+    margin: 0;
 }
 
 .pediatric-dentistry__card--content {
@@ -93,17 +100,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 585px;
+    margin: 0;
 }
 
 .pediatric-dentistry__card--title {
     font-size: 28px;
     font-weight: 500;
     line-height: 36.4px;
+    margin: 0 0 10px 0;
+
 }
 
 .pediatric-dentistry__card--line {
     height: 3px;
-    width: 18.6px;
+    width: 40px;
     text-align: left;
     margin: 0;
 }
@@ -116,6 +127,11 @@
     margin-top: 10px;
 }
 
+.pediatric-dentistry__card--list {
+    margin: 0;
+    padding-left: 1rem;
+}
+
 .pediatric-dentistry__card--item {
     font-size: 14px;
     font-weight: 400;
@@ -126,6 +142,8 @@
 .pediatric-dentistry__card--buttons {
     display: flex;
     flex-direction: column;
+    margin: 20px 0 0  0;
+
 }
 
 @media (min-width:398px)
@@ -170,10 +188,6 @@
     }
     }
 
-/* .pediatric-dentistry__card-dental-emergencies {
-    background-color: var(--services__card-treatment);
-} */
-
 .pediatric-dentistry__card-dental-emergencies--content {
     background-color: var(--services__card-treatment);
 }
@@ -183,7 +197,7 @@
 }
 
 .pediatric-dentistry__card-dental-emergencies--line {
-    background-color: rgb(135, 177, 223);
+    background-color: var(--pediatric-dentistry__card-dental-emergencies--line);
 }
 
 .pediatric-dentistry__card-dental-emergencies--text {
@@ -191,7 +205,7 @@
 }
 
 .pediatric-dentistry__card-dental-emergencies--list-item {
-    color:  rgb(88, 137, 194);
+    color:  var(--pediatric-dentistry__card-dental-emergencies--list-item);
 }
 
 .pediatric-dentistry__card-dental-emergencies--button-lm {
@@ -203,8 +217,17 @@
 }
 
 .pediatric-dentistry__card-oral-examination {
-    background-color: rgba(225, 227, 222, 1);
     margin-top: 25px;
+}
+
+@media (min-width:768px)
+    { .pediatric-dentistry__card-oral-examination {
+        flex-direction: row-reverse;            
+    }
+    }
+
+.pediatric-dentistry__card-oral-examination--content {
+    background-color: var(--pediatric-dentistry__card-oral-examination--content); 
 }
 
 .pediatric-dentistry__card-oral-examination--title {
@@ -212,11 +235,11 @@
 }
 
 .pediatric-dentistry__card-oral-examination--line {
-    background-color:rgb(193 203 198);
+    background-color: var(--pediatric-dentistry__card-oral-examination--line);
 }
 
 .pediatric-dentistry__card-oral-examination--text {
-    color: rgba(116, 135, 132, 1);
+    color: var(--pediatric-dentistry__card-oral-examination--text);
 }
 
 .pediatric-dentistry__card-oral-examination--list-item {
@@ -232,8 +255,11 @@
 }
 
 .pediatric-dentistry__card-oral-health {
-    background-color: rgb(249, 236, 215);
     margin-top: 25px;
+}
+
+.pediatric-dentistry__card-oral-health--content {
+    background-color: var(--pediatric-dentistry__card-oral-health--content);
 }
 
 .pediatric-dentistry__card-oral-health--title {
@@ -241,7 +267,7 @@
 }
 
 .pediatric-dentistry__card-oral-health--line {
-    background-color: rgb(247, 221, 197);
+    background-color: var(--pediatric-dentistry__card-oral-health--line);
 }
 
 .pediatric-dentistry__card-oral-health--text {
@@ -249,7 +275,7 @@
 }
 
 .pediatric-dentistry__card-oral-health--list-item {
-    color: rgb(227, 175, 146);
+    color: var(--pediatric-dentistry__card-oral-health--list-item);
 }
 
 .pediatric-dentistry__card-oral-health--button-lm {
@@ -260,17 +286,26 @@
     background-color: var(--testimonials-svg-color-katy);
 }
 
-.pediatric-dentistry__card-first-dental-visit {
-    background-color: var(--testimonials-background-color-katy);
+.pediatric-dentistry__card-first-dental-visit {  
     margin-top: 25px;
 }
 
+@media (min-width:768px)
+    { .pediatric-dentistry__card-first-dental-visit {
+        flex-direction: row-reverse;            
+    }
+    }
+
+.pediatric-dentistry__card-first-dental-visit--content {
+    background-color: var(--testimonials-background-color-katy);
+}
+
 .pediatric-dentistry__card-first-dental-visit--title {
-    color: rgb(42, 73, 140);
+    color: var(--pediatric-dentistry__card-first-dental-visit--title);
 }
 
 .pediatric-dentistry__card-first-dental-visit--line {
-    background-color: rgb(180, 197, 228);
+    background-color: var(--pediatric-dentistry__card-dental-emergencies--line);
 }
 
 .pediatric-dentistry__card-first-dental-visit--text {
@@ -278,19 +313,18 @@
 }
 
 .pediatric-dentistry__card-first-dental-visit--list-item {
-    color: rgb(125, 148, 196);
+    color: var(--pediatric-dentistry__card-first-dental-visit--list-item);
 }
 
 .pediatric-dentistry__card-first-dental-visit--button-lm {
-    background-color: rgb(42, 73, 140);
+    background-color: var(--pediatric-dentistry__card-first-dental-visit--title);
 }
 
 .pediatric-dentistry__card-first-dental-visit--button-visit {
-    background-color: rgb(234, 112, 54);
+    background-color: var(--pediatric-dentistry__card-first-dental-visit--button-visit);
 }
 
 .pediatric-dentistry__card-fluoride-treatment {
-    background-color: var(--services__card-preventive);
     margin-top: 25px;
 }
 
@@ -298,12 +332,16 @@
     object-position: left;
 }
 
+.pediatric-dentistry__card-fluoride-treatment--content {
+    background-color: var(--services__card-preventive);
+}
+
 .pediatric-dentistry__card-fluoride-treatment--title {
     color: var(--main-color-second);
 }
 
 .pediatric-dentistry__card-fluoride-treatment--line {
-    background-color: rgb(193, 203, 198);
+    background-color: var(--pediatric-dentistry__card-oral-examination--line);
 }
 
 .pediatric-dentistry__card-fluoride-treatment--text {
@@ -311,7 +349,7 @@
 }
 
 .pediatric-dentistry__card-fluoride-treatment--list-item {
-    color: rgb(135, 153, 150);
+    color: var(--pediatric-dentistry__card-fluoride-treatment--list-item);
 }
 
 .pediatric-dentistry__card-fluoride-treatment--button-lm {
@@ -319,20 +357,29 @@
 }
 
 .pediatric-dentistry__card-fluoride-treatment--button-visit {
-    background-color: rgb(234, 112, 54);
+    background-color: var(--pediatric-dentistry__card-first-dental-visit--button-visit);
 }
 
 .pediatric-dentistry__card-nitrous-oxide-sedation {
-    background-color: var(--testimonials-background-color-lucy);
     margin-top: 25px;
 }
 
+@media (min-width:768px)
+    { .pediatric-dentistry__card-nitrous-oxide-sedation {
+        flex-direction: row-reverse;            
+    }
+    }
+
+.pediatric-dentistry__card-nitrous-oxide-sedation--content {
+    background-color: var(--testimonials-background-color-lucy);
+}
+
 .pediatric-dentistry__card-nitrous-oxide-sedation--title {
-    color: rgb(234, 112, 54);
+    color: var(--pediatric-dentistry__card-first-dental-visit--button-visit);
 }
 
 .pediatric-dentistry__card-nitrous-oxide-sedation--line {
-    background-color: rgb(247, 221, 197);
+    background-color: var(--pediatric-dentistry__card-oral-health--line);
 }
 
 .pediatric-dentistry__card-nitrous-oxide-sedation--text {
@@ -340,27 +387,30 @@
 }
 
 .pediatric-dentistry__card-nitrous-oxide-sedation--list-item {
-    color: rgb(226, 173, 144);
+    color: var(--pediatric-dentistry__card-nitrous-oxide-sedation--list-item);
 }
 
 .pediatric-dentistry__card-nitrous-oxide-sedation--button-lm {
-    background-color: rgb(234, 112, 54);
+    background-color: var(--pediatric-dentistry__card-first-dental-visit--button-visit);
 }
 
 .pediatric-dentistry__card-nitrous-oxide-sedation--button-visit {
-    background-color: rgb(42, 73, 140);
+    background-color: var(--pediatric-dentistry__card-first-dental-visit--title);
 }
 
 .pediatric-dentistry__card-pulpotomy {
-    background-color: var(--testimonials-background-color-katy);
     margin-top: 25px;
 }
 
+.pediatric-dentistry__card-pulpotomy--content {
+    background-color: var(--testimonials-background-color-katy);
+}
+
 .pediatric-dentistry__card-pulpotomy--title {
-    color: rgb(42, 73, 140);
+    color: var(--pediatric-dentistry__card-first-dental-visit--title);
 }
 .pediatric-dentistry__card-pulpotomy--line {
-    background-color: rgb(180, 197, 228);
+    background-color: var(--pediatric-dentistry__card-dental-emergencies--line);
 }
 
 .pediatric-dentistry__card-pulpotomy--text {
@@ -368,20 +418,29 @@
 }
 
 .pediatric-dentistry__card-pulpotomy--list-item {
-    color: rgb(125, 148, 196);
+    color: var(--pediatric-dentistry__card-first-dental-visit--list-item);
 }
 
 .pediatric-dentistry__card-pulpotomy--button-lm {
-    background-color: rgb(42, 73, 140);
+    background-color: var(--pediatric-dentistry__card-first-dental-visit--title);
 }
 
 .pediatric-dentistry__card-pulpotomy--button-visit {
-    background-color: rgb(234, 112, 54);
+    background-color: var(--pediatric-dentistry__card-first-dental-visit--button-visit);
 }
 
 .pediatric-dentistry__card-sports-mouthguards {
-    background-color: rgb(225, 227, 222);
     margin-top: 25px;
+}
+
+@media (min-width:768px)
+    { .pediatric-dentistry__card-sports-mouthguards {
+        flex-direction: row-reverse;            
+    }
+    }
+
+.pediatric-dentistry__card-sports-mouthguards--content {
+    background-color: var(--pediatric-dentistry__card-oral-examination--content);
 }
 
 .pediatric-dentistry__card-sports-mouthguards--title {
@@ -389,7 +448,7 @@
 }
 
 .pediatric-dentistry__card-sports-mouthguards--line {
-    background-color: rgb(193, 203, 198);
+    background-color: var(--pediatric-dentistry__card-oral-examination--line);
 }
 
 .pediatric-dentistry__card-sports-mouthguards--text {
@@ -405,20 +464,24 @@
 }
 
 .pediatric-dentistry__card-sports-mouthguards--button-visit {
-    background-color: rgb(234, 112, 54);
+    background-color: var(--pediatric-dentistry__card-first-dental-visit--button-visit);
 }
 
 .pediatric-dentistry__card-tooth-extraction {
-    background-color: var(--testimonials-background-color-lucy);
     margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.pediatric-dentistry__card-tooth-extraction--content {
+    background-color: var(--testimonials-background-color-lucy);
 }
 
 .pediatric-dentistry__card-tooth-extraction--title {
-    color: rgb(234, 112, 54);
+    color: var(--pediatric-dentistry__card-first-dental-visit--button-visit);
 }
 
 .pediatric-dentistry__card-tooth-extraction--line {
-    background-color: rgb(247, 221, 197);
+    background-color: var(--pediatric-dentistry__card-oral-health--line);
 }
 
 .pediatric-dentistry__card-tooth-extraction--text {
@@ -426,13 +489,13 @@
 }
 
 .pediatric-dentistry__card-tooth-extraction--list-item {
-    color: rgb(228, 180, 151);
+    color: var(--pediatric-dentistry__card-oral-health--list-item);
 }
 
 .pediatric-dentistry__card-tooth-extraction--button-lm {
-    background-color: rgb(234, 112, 54);
+    background-color: var(--pediatric-dentistry__card-first-dental-visit--button-visit);
 }
 
 .pediatric-dentistry__card-tooth-extraction--button-visit {
-    background-color: rgb(42, 73, 140);
+    background-color: var(--pediatric-dentistry__card-first-dental-visit--title);
 }
