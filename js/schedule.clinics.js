@@ -1,3 +1,6 @@
+
+
+
 /*function togglePartial() {
     const contentContainer = document.getElementById("content");
     const currentPartial = contentContainer.innerHTML;
