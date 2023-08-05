@@ -1,15 +1,29 @@
+// PhoneCall
+function callNumberNY () {
+  const clinicPhoneNumber = document.getElementById('ny-clinic-phone-number').value;
+  window.open('tel:${clinicPhoneNumber}');
+}
 
+document.getElementById('ny-clinic-phone-number').addEventListener("click", callNumberNY);
 
+function callNumberLA () {
+  const clinicPhoneNumber = document.getElementById('la-clinic-phone-number').value;
+  window.open('tel:${clinicPhoneNumber}');
+}
 
-/*function togglePartial() {
-    const contentContainer = document.getElementById("content");
-    const currentPartial = contentContainer.innerHTML;
+document.getElementById('la-clinic-phone-number').addEventListener("click", callNumberLA);
 
-    if (currentPartial.includes("schedule.clinics.partial.html")) {
-      // Если текущий partial - schedule.clinics.partial.html, замените его на schedule.visit.partial.html
-      contentContainer.innerHTML = '<object type="text/html" data="schedule.visit.partial.html"></object>';
-    } else {
-      // Если текущий partial - schedule.visit.partial.html, замените его на schedule.clinics.partial.html
-      contentContainer.innerHTML = '<object type="text/html" data="schedule.clinics.partial.html"></object>';
-    }
-  }*/
+//Email
+function emailNY() {
+  const clinicEmail = document.getElementById('ny-clinic-email').href;
+  window.location.href = clinicEmail;
+}
+
+document.getElementById('ny-clinic-email').addEventListener("click", emailNY);
+
+function emailLA() {
+  const clinicEmail = document.getElementById('la-clinic-email').href;
+  window.location.href = clinicEmail;
+}
+
+document.getElementById('la-clinic-email').addEventListener("click", emailLA);

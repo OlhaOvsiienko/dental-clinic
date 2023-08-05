@@ -146,6 +146,20 @@
   text-align: left;
 }
 
+.clinic-phone-number-ny,
+.clinic-phone-number-la,
+.clinic-email-item {
+  color: var(--text-color-first);
+  text-decoration: none;
+}
+
+#la-clinic-phone-number:hover,
+#ny-clinic-phone-number:hover,
+#ny-clinic-email:hover,
+#la-clinic-email:hover {
+  text-decoration: underline; 
+}
+
 .clinic-email-item {
   font-size: 17px;
 }
