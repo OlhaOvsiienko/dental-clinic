@@ -1,7 +1,6 @@
 .schedule-visit-container {
   max-width: 1200px;
-  padding: 60px 30px 60px 30px;
-  border: 1px solid rgb(47, 0, 255);
+  padding: 30px 30px 0px 30px;
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -9,9 +8,8 @@
 
 @media (max-width: 768px) {
 .schedule-visit-container {
-  flex-direction: column; 
+  flex-direction: column;
 }
-
 .plan-visit,
 .schedule-form-box {
   width: 100%; 
@@ -28,7 +26,6 @@
 }
 
 .plan-visit {
-  border: 1px solid rgb(255, 102, 0);
   text-align: left;
 }
 
@@ -36,17 +33,15 @@
   color: var(--main-color-first);
   font-size: 12px;
   font-weight: 500;
-  
 }
-
 
 .visit-warning {
   color: var(--main-color-second);
   font-size: 19px;
   font-weight: 500;
   margin-top: 20px;
-  
 }
+
 .visit-plan__list-item {
   color: var(--text-color-first);
   list-style: none;
@@ -71,45 +66,31 @@
   margin-left: -30px;
 }
 
-
-
 .schedule-form-inner {
   background-color: var(--services__card-treatment);
   border-radius: 34px;
-  position: absolute; 
-  top: 0; 
-  left: 0; 
   width: 100%; 
   height: 100%;
-  border: 1px solid rgb(98, 6, 37);
- 
-  
 }
 
 @media (max-width: 768px) {
-.schedule-form-inner {
-  position: static; 
-  border: none; 
-}
-
 .schedule-form {
   margin: 0; 
+  padding-bottom: 20px;
 }
-
 .field-input {
   margin: 10px 0; 
 }
-
 .field-button-send {
   margin-bottom: 30px;
 }
 }
 
 .schedule-form {
-  border: 1px solid rgb(246, 6, 6);
   margin-right: 30px;
   margin-left: 30px;
 }
+
 .field-input {
   background-color: var(--services__card-treatment--line);
   border-color: transparent;
@@ -143,8 +124,6 @@ input:focus, select:focus {
    border-color: transparent;
 }
 
-
-
 .button-send {
   background-color: var(--testimonials-svg-color-katy);
   color: white;
@@ -153,7 +132,6 @@ input:focus, select:focus {
   padding: 12px 24px 12px 24px;
   width: 100%;
 }
-
 
 .field-button-send:hover button {
    background-color: var(--services__card-treatment--button-hover);
