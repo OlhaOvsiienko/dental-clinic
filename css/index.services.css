@@ -170,6 +170,10 @@
     margin-left: 35px;
   }
 
+  ul {
+    margin-left: 0;
+  }
+
   .services__card-restorative--list-item {
     color: var(--services__card-restorative--list-item);
     font-size: 15px;
