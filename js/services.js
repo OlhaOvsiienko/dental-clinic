@@ -30,7 +30,7 @@ const slides = [
     '    <li class="services__card-restorative--list-item">Dental sealants;</li>' +
     '    <li class="services__card-restorative--list-item">Performing root canals.</li>' +
     '  </ul>' +
-    '  <button class="services__card-restorative--button" type="submit">Learn More</button>' +
+    ' <a href="pediatric-dentistry.html" class="services__card-restorative--button">Learn More</a>' +
     '</div>',
     '<div class="services__card-preventive services__card">' +
     '  <div class="services__card-preventive-bg">' +
@@ -45,7 +45,7 @@ const slides = [
     '    <li class="services__card-preventive--list-item">Fluoride treatments;</li>' +
     '    <li class="services__card-preventive--list-item">Regular checkups.</li>' +
     '  </ul>' +
-    '  <button class="services__card-preventive--button" type="submit">Learn More</button>' +
+    '  <a href="pediatric-dentistry.html" class="services__card-preventive--button">Learn More</a>' +
     '</div>',
     '<div class="services__card-treatment services__card">' +
     '  <div class="services__card-treatment-bg">' +
@@ -60,7 +60,7 @@ const slides = [
     '    <li class="services__card-treatment--list-item">Urgent dental treatments;</li>' +
     '    <li class="services__card-treatment--list-item">Orthodontic treatments.</li>' +
     '  </ul>' +
-    '  <button class="services__card-treatment--button" type="submit">Learn More</button>' +
+    '  <a href="pediatric-dentistry.html" class="services__card-treatment--button">Learn More</a>' +
     '</div>'
 ];
 
@@ -79,6 +79,8 @@ function renderSlide() {
       }
   }
 }
+
+renderSlide();
 
 function nextSlide() {
     currentSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
