@@ -135,7 +135,7 @@
   background-color: var(--services__card-restorative-bg);
   width: 50px;
   height: 50px;
-  margin-left: 35px;
+  margin-left: 0;
   display: flex;
   border-radius: 100%;
   align-items: center;
@@ -154,7 +154,7 @@
   font-family: "Fredoka", sans-serif;
   font-size: 22px;
   font-weight: 500;
-  margin-left: 35px;
+  margin-left: 0;
 }
 
 .services__card-restorative--text {
@@ -163,17 +163,18 @@
   font-size: 17px;
   font-style: italic;
   width: 165px;
-  margin-left: 35px;
+  margin-left: 0;
 }
 
 .services__card-restorative--line {
   background-color: var(--services__card-restorative--line);
   height: 3px;
   width: 27px;
-  margin-left: 35px;
+  margin-left: 0;
 }
 
 .services__card-restorative--list-item {
+  padding-left: 0;
   color: var(--services__card-restorative--list-item);
   font-size: 15px;
   font-family: var(--text-font-family);
@@ -191,7 +192,7 @@
   justify-content: center;
   height: 43.3125px;
   width: 119.812px;
-  margin-left: 35px;
+  margin-left: 0;
   border-color: var(--services__card-border-color);
 }
 
@@ -213,7 +214,7 @@
   background-color: var(--services__card-preventive-bg);
   width: 50px;
   height: 50px;
-  margin-left: 35px;
+  margin-left: 0;
   display: flex;
   border-radius: 100%;
   align-items: center;
@@ -234,14 +235,14 @@
   font-family: "Fredoka", sans-serif;
   font-size: 22px;
   font-weight: 500;
-  margin-left: 35px;
+  margin-left: 0;
 }
 
 .services__card-preventive--line {
   background-color: var(--services__card-preventive--line);
   height: 3px;
   width: 27px;
-  margin-left: 35px;
+  margin-left: 0;
 }
 
 .services__card-preventive--text {
@@ -250,9 +251,14 @@
   font-size: 17px;
   font-style: italic;
   width: 180px;
-  margin-left: 35px;
+  margin-left: 0;
   font-weight: 400;
 }
+
+.services__card ul {
+  margin-left: 0;
+}
+
 
 .services__card-preventive--list-item {
   color: var(--text-color-first);
@@ -272,7 +278,7 @@
   justify-content: center;
   height: 43.3125px;
   width: 119.812px;
-  margin-left: 35px;
+  margin-left: 0;
   border-color: var(--services__card-border-color);
 }
 
@@ -295,7 +301,7 @@
   background-color: var(--services__card-treatment-bg);
   width: 50px;
   height: 50px;
-  margin-left: 35px;
+  margin-left: 0;
   display: flex;
   border-radius: 100%;
   align-items: center;
@@ -314,14 +320,14 @@
   font-family: "Fredoka", sans-serif;
   font-size: 22px;
   font-weight: 500;
-  margin-left: 35px;
+  margin-left: 0;
 }
 
 .services__card-treatment--line {
   background-color: var(--services__card-treatment--line);
   height: 3px;
   width: 27px;
-  margin-left: 35px;
+  margin-left: 0;
 }
 
 .services__card-treatment--text {
@@ -330,7 +336,7 @@
   font-size: 17px;
   font-style: italic;
   width: 180px;
-  margin-left: 35px;
+  margin-left: 0;
   font-weight: 400;
 }
 
@@ -352,7 +358,7 @@
   justify-content: center;
   height: 43.3125px;
   width: 119.812px;
-  margin-left: 35px;
+  margin-left: 0;
   border-color: var(--services__card-border-color);
 }
 
@@ -368,9 +374,7 @@
   border-color: var(--services__card-border-color);
   background-color: var(--main-color-second);
   color: var(--services__card--button-color);
-  border: 0;
-  position: absolute;
-  left: -2%;
+  border: 0;  
 }
 
 .carousel-btn__services-next {
@@ -381,8 +385,6 @@
   background-color: var(--main-color-second);
   color: var(--services__card--button-color);
   border: 0;
-  position: absolute;
-  left: 85%;
 }
 
 @media (min-width:768px) {

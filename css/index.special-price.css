@@ -1,11 +1,39 @@
-.star-svg {
+.special-price__main-rbox-star {
+    position: absolute;
+    display: block;
     width: 25px;
     height: 25px;
+    margin-left: 55%;
+    margin-bottom: -35%;
+}
+
+.special-price__big-star {
+    width: 20%;
+    position: absolute;
+    margin-left: 60%;
+    
+
 }
 
 .special-price_content {
     display: block;
     min-height: 830px;
+    padding: 80px 24px 0;
+}
+
+@media(min-width: 768px) {
+    .special-price_content {
+        padding: 60px 32px 0;
+
+    }
+
+    .special-price__big-star {
+        display: none;
+    }
+
+    .special-price__main-rbox-star {
+        display: none;
+    }
 }
 
 .special-price {
@@ -21,17 +49,25 @@
     background-size: cover;
     background-position: center;
 }
+
 /* -----------------header setting-------------------- */
 
 .special-price__header {
     display: flex;
     align-items: center;
-    height: 200px;
+    
 }
 
 .special-price__header-logo {
-    display: flex;
+    display: none;
     margin-left: 0px;
+}
+
+@media(min-width: 768px) {
+    .special-price__header-logo {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .special-price__header-logo-name {
@@ -46,6 +82,8 @@
 
 .special-price__header-logo-star {
     margin-top: 5px;
+    width: 25px;
+    height: 25px;
 }
 
 .special-price__header-link {
@@ -67,19 +105,46 @@
     color: #FFF;
 }
 
+.special-price__header-link-desctop {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .special-price__header-link-desctop {
+        display: block;
+    }
+
+    .special-price__header-link-mobile {
+        display: none;
+    }
+
+    .special-price__header{
+        margin-top: 50px;
+    }
+}
+
 /* ----------------------main settings------------------------- */
 
 .special-price__main {
-    display: flex;
     margin: 0;
 }
 
+
 .special-price__main-lbox {
     width: 470px;
-    /* height: 476px; */
     max-width: 470px;
     margin-left: 0;
 }
+
+
+@media(max-width: 767px) {
+    .special-price__main-lbox {
+        z-index: 5;
+    }
+
+}
+
+
 
 .special-price__main-lbox-header {
     color: #F5F3EF;
@@ -145,19 +210,22 @@
     transition: all 300ms ease;
 }
 
+
+
 /* --------------------------------rblock------------------------------------- */
+
+.special-price__main-rbox-mobile {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: last baseline;
+    justify-content: center;
+}
 
 .special-price__main-rbox {
     margin-right: 0;
 }
 
-/* .price-box {
-    margin: 0 10px 0 0;
-} */
-
-.special-price__main-rbox-star {
-    margin: 105px 10px 0 185px;
-}
 
 .special-price__main-rbox-text {
     color: rgba(245, 243, 239, 0.84);
@@ -166,7 +234,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 26.52px;
-    margin: 100px 10px 0 140px;
+    margin: 0%;
 }
 
 .special-price__main-rbox-price {
@@ -175,14 +243,77 @@
     font-size: 140px;
     font-style: normal;
     font-weight: 500;
-    line-height: 168px;
-    margin: -25px 10px 0 0;
+    margin: 0%;
 }
+
+.special-price__main-rbox-descpot {
+    display: none;
+}
+
+.special-price__footer-mobile {
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+    
+}
+
+.special-price__footer-desctop {
+    display: none;
+}
+
+.special-price__main-text {
+    margin-left: 0;
+}
+
+@media(min-width: 768px) {
+    .special-price__main-rbox-mobile {
+        display: none;
+    }
+
+    .special-price__main-rbox-descpot {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-top: 25%;
+    }
+
+    .special-price__main-rbox-descpot .star-svg {
+        display: none;
+
+    }
+
+    .special-price__footer-mobile {
+        display: none;
+    }
+
+    .special-price__footer-desctop {
+        display: block;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    .special-price__main {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+
+    }
+
+    
+
+    .special-price__star {
+       display: block;
+       width: 25px;
+       position: absolute;
+       margin-top: -100px;
+    }
+}
+
 
 /* --------------------footer----------------------------- */
 
 .special-price__footer {
-    margin: 70px 0 0 0;
+
     max-width: 410px;
     padding: 0;
 
@@ -195,6 +326,7 @@
     font-style: italic;
     font-weight: 400;
     line-height: 22.5px;
+    margin-top: 20px;
 }
 
 /* ---------------media-------------------- */
