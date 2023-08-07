@@ -1,17 +1,5 @@
 .clinics {
-  padding: 60px 0px 10px 0px;
-}
-
-@media (max-width: 768px) {
-  .clinics {
-    padding: 60px 10px 10px 10px;
-  }
-  .clinic-email-item {
-    font-size: 15px;
-  }
-  .clinics_card-booking {
-    width: 100%;
-  }
+  padding: 60px 0px 30px 0px;
 }
 
 .clinics__title {
@@ -45,22 +33,14 @@
   flex-direction: row;
   max-width: 1200px;
   gap: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   padding-left: 30px;
   padding-right: 30px;
-}
-
-@media (max-width: 768px) {
-  .clinics-inner {
-  flex-direction: column;
-  }
 }
 
 .clinics_card-booking {
   border-radius: 34px;
   background-color: var(--testimonials-background-color-lucy);
-  flex: 1;
-  padding-bottom: 30px;
 }
 
 .clinics_card-photo {
@@ -92,133 +72,80 @@
   padding-right: 40px;
 }
 
-.clinics_card-text {
-  padding-bottom: 40px;
-}
-
 .clinics_card-button {
-  color: var(--services__card--button-color);
+  color: white;
   font-size: 14px;
+  /*font-family: Roboto, sans-serif;*/
   border-radius: 34px;
   background-color: var(--main-color-first);
-  font-weight: bold;
   padding: 12px 24px 12px 24px;
+  font-weight: bold;
+  display: grid;
   place-items: center;
   margin-left: 40px;
-  
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-color: transparent;
 }
-
 .clinics_card-button:hover {
   background-color: var(--main-color-second);
 }
 
-.card-clinic {
-  flex: 1;
-  width: 100%;
+.card-ny {
+  border: 1px solid red;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
 }
 
-.map-clinic {
+.map-ny {
   height: 200px;
-  margin-bottom: 30px;
 }
 
-.map-clinic-img {
+.map-ny-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.clinic-title {
-  color: var(--main-color-second);
-  font-size: 22px;
-  font-family: "Fredoka", sans-serif;
-}
-
-.clinic-line {
-  color: var(--main-color-first);
-}
-
-.clinic-schedule-text,
-.clinic-phone-number,
-.clinic-email-item {
-  margin: 0px;
-  font-size: 15px;
-  text-align: left;
-}
-
-.clinic-phone-number-ny,
-.clinic-phone-number-la,
-.clinic-email-item {
-  color: var(--text-color-first);
-  text-decoration: none;
-}
-
-#la-clinic-phone-number:hover,
-#ny-clinic-phone-number:hover,
-#ny-clinic-email:hover,
-#la-clinic-email:hover {
-  text-decoration: underline; 
-}
-
-.clinic-email-item {
-  font-size: 17px;
-}
-
-.clinic-phone,
-.clinic-email {
+.ny-tel,
+.ny-email {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  margin-top: 30px;
-  margin-bottom: 0px;
+  border: 1px solid yellow;
 }
 
-.clinic-phone-container,
-.clinic-email-container {
-  text-align: left;
-  width: 100%;
-  margin-left: 10px;
-}
-
-
-/*Icon*/
-.shedule-clinic-icon-container {
-  width: 25px; 
-  height: 25px; 
-  display: flex; 
-  margin: 0px;
+.icon-frame {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border: 1px solid green;
 }
 
 .schedule-icon {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-}
+  
+  }
 
-/*Big Photo*/
-
-.schedule-photo {
-  padding: 60px 30px 60px 30px;
-  max-width: 1200px;
-  display:flex;
-}
-
-@media (max-width: 768px) {
   .schedule-photo {
-    padding: 30px 30px 30px 30px;
-}
-}
+    padding: 65px 30px 65px 30px;
+    max-width: 1200px;
+    display:flex;
+    border: 1px solid orange;
+  }
 
-.schedule-photo-frame {
-  border-radius: 34px;
-  width: 100%; 
-  border-radius: 34px; 
+  .schedule-photo-frame {
+border-radius: 34px;
+border: 1px solid rgb(0, 255, 76);
+width: 100%; /* Занимает 100% ширины родительского контейнера */
+  border-radius: 34px; /* Добавляет закругленные углы (border radius) на 34 пикселя */
   overflow: hidden;
-}
+  }
 
-.schedule-photo-img {
-  width: 100%; 
-  height: auto; 
+  .schedule-photo-img {
+    width: 100%; /* Занимает 100% ширины контейнера */
+  height: auto; /* Автоматически вычисляет высоту, чтобы сохранить пропорции */
   display: block;
-}
+  }

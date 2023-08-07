@@ -11,3 +11,14 @@ menuContent.classList.toggle('active');
 bodyLock.classList.toggle('lock');
 }
 
+function hideMobMenu() {
+    
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        mobileMenu.classList.remove('active');
+        menuBtn.classList.remove('active');
+        menuContent.classList.remove('active');
+        bodyLock.classList.remove('lock');
+    }
+  }
+
+window.addEventListener('resize', hideMobMenu);

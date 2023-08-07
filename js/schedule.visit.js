@@ -1,3 +1,8 @@
+
+
+
+
+
 const scheduleForm = document.getElementById("scheduleForm");
 function validateScheduleForm() {
   const nameSchedule = document.getElementById("nameSchedule").value;

@@ -97,15 +97,23 @@ input:focus, select:focus {
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px 5px 10px 5px;
+  padding: 30px 32px;
   text-align: center;
   align-items: center;
   justify-content: center;
  }
 
+ .booking__description-best-dental{
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .booking {
     padding: 35px 10px 35px 10px;
+  }
+
+  .booking__description-ensure-children, .booking__button {
+    margin-top: 50px;
   }
   
   .inner {
@@ -117,7 +125,9 @@ flex-wrap: wrap;
     grid-template-columns: 1fr;
     text-align: center;
     justify-content: center;
+    padding: 75px 0 80px;
   }
+
 }
 
 .booking__description-best-dental {
