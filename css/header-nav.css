@@ -162,6 +162,7 @@ body.lock {
 .navigation-links li a:hover {
     color: var(--main-color-first);
     border-bottom: 2px solid var(--main-color-first);
+    border-width: 2px;
     line-height: 50%;
     margin-top: 5px;
     text-underline-offset: 5px;
