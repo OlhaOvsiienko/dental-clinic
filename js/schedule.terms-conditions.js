@@ -27,5 +27,5 @@ for (let i = 1; i <= 6; i++) {
   document.getElementById("chevron-icon-" + i).addEventListener("click", function() {
     toggleText(i);
   });
-}
+} 
 
