@@ -3,7 +3,7 @@ document.querySelector('.footer-phone-NY-description-link').addEventListener("cl
 
 function callNY () {
     const phoneNumberNY = document.getElementById('phone-numberNY').value;
-    window.open('tel:${phoneNumberNY}');
+    window.open('tel:${+1(234)567890}');
 }
 
 document.querySelector('.footer-phone-LA-description-link').addEventListener("click", callLA);
