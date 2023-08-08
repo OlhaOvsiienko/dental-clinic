@@ -51,21 +51,24 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
     font-size: 19px;
 }
 
+@media (max-width: 767px) {
+    .news-and-articles__content-block:last-child {
+        margin-top: 50px;
+
+    }
+}
+
 @media (min-width: 768px) {
     .news-and-articles__container {
         margin: 0 auto;
     }
 }
 
-.news-and-articles__content {
-    padding: 0 15px;
-}
-
 .content-block__image {
     border-radius: 30px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: 0% 0%;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -92,13 +95,14 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
     align-items: center;
     font-weight: 700;
     padding: 16px 32px;
-    margin-top: 51px;
+    margin-top: 35px;
 }
 
 .news-and-articles__content-block {
     padding: 0 15px;
     margin-top: 20px;
 }
+
 
 .content-block__title {
     color: var(--main-color-second);
@@ -108,7 +112,15 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 @media (min-width: 768px) {
     .news-and-articles__content {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+
+.news-and-articles__content-block:first-child {
+    padding-left: 0;
+    }
+    
+    .news-and-articles__content-block:last-child {
+        padding-right: 0;
     }
 }

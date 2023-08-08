@@ -369,6 +369,11 @@ a:hover {
         margin-left: 40px;
     }
 
+    .header-main-part__container {
+        padding-left: 32px;
+        margin: auto;
+    }
+
 
 }
 
@@ -377,6 +382,7 @@ a:hover {
 @media (min-width: 1280px) {
     .header-main-part__container {
         padding-bottom: 196px;
+        padding-left: 180px;
     }
 
     .header-links {

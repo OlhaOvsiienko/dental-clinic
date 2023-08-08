@@ -47,6 +47,13 @@
     letter-spacing: 0.2rem;
 }
 
+@media (max-width: 767px) {
+    .diccount-description{
+        text-align: center;
+    }
+    
+}
+
 @media (min-width: 768px) {
     .diccount-description {
         padding: 90px 60px;

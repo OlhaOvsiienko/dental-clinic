@@ -125,21 +125,24 @@
 
 /* ----------------------main settings------------------------- */
 
-.special-price__main {
-    margin: 0;
-}
 
 
 .special-price__main-lbox {
-    width: 470px;
-    max-width: 470px;
     margin-left: 0;
+    
 }
 
 
 @media(max-width: 767px) {
     .special-price__main-lbox {
         z-index: 5;
+    }
+    
+
+    .special-price__main-text {
+        
+        margin: auto;
+        margin-left: 0;
     }
 
 }
@@ -265,7 +268,14 @@
     margin-left: 0;
 }
 
+
+
+
 @media(min-width: 768px) {
+
+    .special-price__main-lbox{
+        max-width: 470px;
+    }
     .special-price__main-rbox-mobile {
         display: none;
     }

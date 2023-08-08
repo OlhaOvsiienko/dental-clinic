@@ -1,16 +1,15 @@
-document.querySelector('.footer-phone-description-link').addEventListener("click", callNumber);
-document.querySelector('.footer-phone-LA-description-link').addEventListener("click", callNumber);
+document.querySelector('.footer-phone-NY-description-link').addEventListener("click", callNY);
 
-function callNumber () {
-    const phoneNumber = document.getElementById('phone-number').value;
-    window.open('tel:${phoneNumber}');
+
+function callNY () {
+    const phoneNumberNY = document.getElementById('phone-numberNY').value;
+    window.open('tel:${phoneNumberNY}');
 }
 
+document.querySelector('.footer-phone-LA-description-link').addEventListener("click", callLA);
 
-
-
-// function callNumberLA () {
-//     const phoneNumberLA = document.getElementById('phone-numberLA').value;
-//     window.open('tel:${phoneNumber}');
-// }
+function callLA () {
+    const phoneNumberLA = document.getElementById('phone-numberLA').value;
+    window.open('tel:${phoneNumberLA}');
+}
 
