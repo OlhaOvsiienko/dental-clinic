@@ -153,11 +153,7 @@ body.lock {
     display: none;
 }
 
-@media (max-height: 465px) {
-    body.lock {
-        overflow: visible;
-    }
-} 
+
 
 
 .navigation-links li {
@@ -284,3 +280,9 @@ body.lock {
 {padding-right: 0;}
     
 }
+
+@media (max-height: 465px) {
+    body.lock {
+        overflow: visible;
+    }
+} 
