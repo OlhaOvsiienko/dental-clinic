@@ -63,4 +63,6 @@ async function handleSubmit(event) {
 
 document.getElementById("sendButton").addEventListener("click", handleSubmit);
 
+
 bookingForm.addEventListener("submit", handleSubmit);
+
