@@ -9,7 +9,7 @@ function callNY () {
 document.querySelector('.footer-phone-LA-description-link').addEventListener("click", callLA);
 
 function callLA () {
-    const phoneNumberLA = document.getElementById('phone-numberLA').value;
+    const phoneNumberLA = document.getElementById('phone-numberLA').textContent;
     window.open('tel:phoneNumberLA');
 }
 
