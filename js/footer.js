@@ -3,13 +3,13 @@ document.querySelector('.footer-phone-NY-description-link').addEventListener("cl
 
 function callNY () {
     const phoneNumberNY = document.getElementById('phone-numberNY').value;
-    window.open('tel:${+1(234)567890}');
+    window.open('tel:+1(234)567890');
 }
 
 document.querySelector('.footer-phone-LA-description-link').addEventListener("click", callLA);
 
 function callLA () {
     const phoneNumberLA = document.getElementById('phone-numberLA').value;
-    window.open('tel:${phoneNumberLA}');
+    window.open('tel:phoneNumberLA');
 }
 
