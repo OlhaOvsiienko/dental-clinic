@@ -5,5 +5,6 @@ document.addEventListener('partialsLoaded', () => {
   import('./index.news-and-articles.js');
   import('./services.js');
   import('./index.book-visit.js');
-  import('./footer.js')
+  import('./footer.js');
+  import('./preventDefault.js')
 });
