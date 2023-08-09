@@ -1,8 +1,15 @@
-function callNumber () {
-    const phoneNumber = document.getElementById('phone-number').value;
-    window.open('tel:${phoneNumber}');
+document.querySelector('.footer-phone-NY-description-link').addEventListener("click", callNY);
+
+
+function callNY () {
+    const phoneNumberNY = document.getElementById('phone-numberNY').innerHTML;
+    window.open('tel:${phoneNumberNY}');
 }
 
-document.getElementById('phone-number').addEventListener("click", callNumber);
+document.querySelector('.footer-phone-LA-description-link').addEventListener("click", callLA);
 
+function callLA () {
+    const phoneNumberLA = document.getElementById('phone-numberLA').innerHTML;
+    window.open('tel:${phoneNumberLA}');
+}
 

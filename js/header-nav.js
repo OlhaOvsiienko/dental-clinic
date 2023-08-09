@@ -22,3 +22,12 @@ function hideMobMenu() {
   }
 
 window.addEventListener('resize', hideMobMenu);
+
+function showOwerflow() {
+  mobileMenu.classList.remove('active');
+  menuBtn.classList.remove('active');
+  menuContent.classList.remove('active');
+  bodyLock.classList.remove('lock');
+}
+
+window.addEventListener('scroll', showOwerflow);
