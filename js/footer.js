@@ -2,8 +2,8 @@ document.querySelector('.footer-phone-NY-description-link').addEventListener("cl
 
 
 function callNY () {
-    const phoneNumberNY = document.getElementById('phone-numberNY').value;
-    window.open('tel:+1(234)567890');
+    const phoneNumberNY = document.getElementById('phone-numberNY').innerHTML;
+    window.open('tel:${phoneNumberNY}');
 }
 
 document.querySelector('.footer-phone-LA-description-link').addEventListener("click", callLA);
