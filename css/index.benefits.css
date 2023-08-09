@@ -4,7 +4,7 @@
     display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .benefits {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -16,7 +16,7 @@
     height: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .benefits__image {
         object-position: -400px 0;
     }
@@ -28,7 +28,7 @@
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 2300px) {
     .benefits__image {
         object-position: 0;
     }
