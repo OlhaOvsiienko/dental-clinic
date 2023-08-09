@@ -153,7 +153,7 @@ a {
 .footer-contacts-description,
 .footer-contacts-description-link,
 .footer-phone-description-link,
-.footer-phone-LA-description-link,.footer-phone-NY-description-link {
+.clinic-phone-number-la, .clinic-phone-number-ny {
     font-size: 17px;
     font-weight: 400;
     color: var(--text-color-first);
